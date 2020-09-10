@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button class="fullHamburger"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-text>
+        <h1 class="fullTitle">
+          Your Fans
+        </h1>
+      </ion-text>
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button slot="icon-only" class="fullHelp" (click)="presentModal()">
+        <ion-icon name="help-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col>
+        <ion-list class="ion-no-padding" *ngIf="this.fans.length > 0" id="list">
+          <ion-card *ngFor="let fan of this.fans" class="card">
+            <ion-card-content class="ion-no-padding">
+              
+              
+              <ion-item lines="none" class="inputItem">
+                <ion-icon name="create-outline" class="editButton" slot="end" (click)="editFan(fan)"></ion-icon>
+                <ion-icon name="trash-outline" class="deleteButton" slot="end" (click)="deleteFan(fan)"></ion-icon>
+                <ion-label position="stacked" class="inputLabel">
+                  Fan's Name
+                </ion-label>
+                <ion-input readonly class="inputField">
+                  {{ fan.fanFirstName + ' ' + fan.fanLastName}}
+                </ion-input>
+              </ion-item>
+              
+              
+              <ion-item lines="none" class="inputItem">
+                <ion-label position="stacked" class="inputLabel">
+                  Fan's Message Starter
+                </ion-label>
+                <ion-input readonly class="inputField">
+                  {{ fan.fanSalutation }}
+                </ion-input>
+              </ion-item>
+              
+              
+              <ion-item lines="none" class="inputItem">
+                <ion-label position="stacked" class="inputLabel">
+                  Fan's Email Address
+                </ion-label>
+                <ion-input readonly class="inputField" *ngIf="fan.fanEmailAddress !== ''">
+                  {{ fan.fanEmailAddress }}
+                </ion-input>
+                <ion-input readonly class="inputField" *ngIf="fan.fanEmailAddress === ''">
+                  No Email Address
+                </ion-input>
+              </ion-item>
+              
+              
+              <ion-item lines="none" class="lastInputItem">
+                <ion-label position="stacked" class="inputLabel">
+                  Fan's Mobile Number
+                </ion-label>
+                <ion-input readonly class="inputField" *ngIf="fan.fanMobileNumber !== ''">
+                  {{ fan.fanMobileNumber }}
+                </ion-input>
+                <ion-input readonly class="inputField" *ngIf="fan.fanMobileNumber === ''">
+                  No Mobile Number
+                </ion-input>
+              </ion-item>
+            
+            
+            </ion-card-content>
+          </ion-card>
+        </ion-list>
+
+        <ion-item lines="none" id="noFansHolder">
+          <ion-text *ngIf="this.fans.length === 0" id="noFans">
+            You have not added any fans yet.
+          </ion-text>
+        </ion-item>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button class="largeButtonFixed" *ngIf="this.fans.length === 0" routerLink='/full/share-campaign'>
+    ADD FANS
+  </ion-button>
+  
+  <ion-button class="largeButtonFixed" *ngIf="this.fans.length > 0 && this.fans.length <= 2" routerLink='/full/share-campaign'>
+    ADD MORE FANS
+  </ion-button>
+
+  <ion-button class="largeButtonRelative" *ngIf="this.fans.length > 2" routerLink='/full/share-campaign'>
+    ADD MORE FANS
+  </ion-button>
+
+</ion-content>

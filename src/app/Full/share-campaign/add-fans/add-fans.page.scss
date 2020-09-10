@@ -1,0 +1,127 @@
+// BEGIN MD STYLE SHEET HERE
+
+.md .firstInputItem {
+    width: 100vw;
+    margin-bottom: -.25vh;
+    margin-top: 0.25vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+.md .inputLabelFloating {
+    font-size: 5vw;
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
+}
+
+.md .largeButton {
+    bottom: 7vh;
+}
+
+.md .bottomMiddleButton {
+    margin-bottom: -0.5vh;
+}
+
+.md #dear {
+    margin-left: 2vw;
+    margin-right: -0.5vw;
+}
+// END MD STYLE SHEET HERE
+
+
+
+
+// BEGIN IOS STYLE SHEET HERE
+
+.ios .inputLabelFloating {
+    font-size: 5vw;
+    margin-bottom: -0.5vh;
+    margin-top: 0.25vh;
+}
+
+.ios .largeButton {
+    bottom: 6vh;
+}
+
+.ios .bottomMiddleButton {
+    margin-bottom: -2.9vh;
+}
+
+.ios.firstInputItem {
+    width: 100vw;
+    margin-bottom: -.25vh;
+    margin-top: 1vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+// END IOS STYLE SHEET HERE
+
+
+
+
+
+
+
+// BEGIN GENERAL STYLE SHEET HERE
+ion-select {
+    margin-left: 0vw;
+    min-width: 58%;
+    padding-left: 0;
+}
+
+
+
+.inputItem {
+    width: 100vw;
+    margin-bottom: -.25vh;
+    margin-top: -0.25vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+.lastInputItem {
+    width: 100vw;
+    margin-bottom: 0.5vh;
+    margin-top: -0.25vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+
+.inputFieldStack {
+    --placeholder-color: var(--ion-color-tertiary);
+    --placeholder-opacity: 40%;
+    --color: var(--ion-color-secondary);
+}
+
+.warningHolder {
+    margin-left: 0vw;
+    margin-top: -1.70vh;
+    margin-bottom: -1.70vh;
+    margin-right: 1vw;
+    padding: 0;
+    --background: transparent;
+}
+
+.regular {
+    font-size: 3.75vw;
+    color: var(--ion-color-primary);
+}
+
+.danger {
+    font-size: 3.75vw;
+    color: var(--ion-color-danger)
+}
+
+.bottomMiddleButton {
+    width: 40vw;
+    margin-left: 30vw;
+    bottom: 2vh;
+}
+
+// END GENERAL STYLE SHEET HERE

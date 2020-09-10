@@ -1,0 +1,169 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/full/your-profile"></ion-back-button>
+    </ion-buttons>
+    <ion-title id='title'>Edit Your Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form">
+    <ion-grid class="ion-no-padding">
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="firstInputItem" lines="none">
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight <= 670">
+              * Your First Name:
+            </ion-label>
+            <ion-label *ngIf="this.platformHeight > 670" color="primary" class="inputLabelFloating" position='floating'>
+              * Your First Name
+            </ion-label>
+            <ion-input class="inputField" autocapitalize="words" autocomplete="on" formControlName="firstName"
+              type="text" maxlength="25" placeholder='John' enterkeyhint="next">
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItem" lines="none">
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight <= 670">
+              * Your Last Name:
+            </ion-label>
+            <ion-label *ngIf="this.platformHeight > 670" color="primary" class="inputLabelFloating" position='floating'>
+              * Your Last Name
+            </ion-label>
+            <ion-input class="inputField" autocapitalize="words" autocomplete="on" formControlName="lastName"
+              type="text" maxlength="30" placeholder='Smith' enterkeyhint="next">
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItem" lines="none">
+
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight <= 670">
+              * Your Mobile #:
+            </ion-label>
+            <ion-label *ngIf="this.platformHeight > 670" color="primary" class="inputLabelFloating" position='floating'>
+              * Your Mobile Number
+            </ion-label>
+            <ion-input class="inputField" autocomplete="tel" formControlName="mobileNumber" type="tel"
+              placeholder='(123) 456-7890' enterkeyhint="next" appPhoneMask minlength="14"
+              (ionFocus)="toggleMobileNumberFocus()">
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItem" lines="none">
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight <= 670">
+              * Your Email:
+            </ion-label>
+            <ion-label *ngIf="this.platformHeight > 670" color="primary" class="inputLabelFloating" position='floating'>
+              * Your Email Address
+            </ion-label>
+            <ion-input class="inputField" autocomplete="email" formControlName="emailAddress" type="email"
+              placeholder='johnsmith@email.com' email enterkeyhint="next" (ionFocus)="toggleEmailFocus()"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+          <ion-item lines="none" class="warningHolder">
+            <p [ngClass]="{
+              'regular': !form.valid || form.valid,
+              'danger':  !form.valid && (form.get('firstName') && !form.get('firstName').valid && form.get('firstName').touched || form.get('lastName') && !form.get('lastName').valid && form.get('lastName').touched || form.get('emailAddress') && !form.get('emailAddress').valid && form.get('emailAddress').touched || form.get('mobileNumber') && !form.get('mobileNumber').valid && form.get('mobileNumber').touched)
+             }">
+              * Required
+            </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+          <ion-item class="warningHolder" lines="none"
+            *ngIf="form.get('emailAddress').touched && form.get('emailAddress').invalid && this.emailAddressFocused">
+            <p class="danger">
+              &nbsp;&nbsp;Please enter a valid email address.
+            </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+          <ion-item class="warningHolder" lines="none"
+            *ngIf="form.get('mobileNumber').touched && form.get('mobileNumber').invalid && this.mobileNumberFocused">
+            <p class="danger">
+              &nbsp;&nbsp;Please enter a valid mobile number.
+            </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row
+        *ngIf="(this.platformHeight >= 736 && this.platformHeight <= 950) || (this.platformHeight < 736 || this.platformHeight > 950)">
+        <ion-col>
+          <div [ngClass]="{
+            'bigNameHolder': this.platformHeight >= 736 && this.platformHeight <= 950,
+            'littleNameHolder':  this.platformHeight < 736 || this.platformHeight > 950
+           }">
+            <ion-text>
+              {{ form.get('firstName').value }} {{ form.get('lastName').value }}
+            </ion-text>
+          </div>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-thumbnail [ngClass]="{
+            'bigProfilePicture': this.platformHeight >= 736 && this.platformHeight <= 950,
+            'littleProfilePicture':  this.platformHeight < 736 || this.platformHeight > 950
+           }" button (click)='selectImage()'>
+            <div id='textHolder'>
+              <ion-text>
+                We don't have an <span style='color: var(--ion-color-secondary)'>action shot or selfie</span> from you
+                yet. Click anywhere in this box to upload an image!
+              </ion-text>
+            </div>
+            <ion-button fill='clear' color='danger' id='add'>
+              <ion-icon name="add-circle"></ion-icon>
+            </ion-button>
+          </ion-thumbnail>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+  <ion-button [disabled]='form.invalid' class='largeButton' (click)='onSaveChanges()' routerDirection='none'>
+    SAVE CHANGES
+  </ion-button>
+
+  <ion-button fill='clear' color='danger' id='cancel' (click)="onCancel()" routerDirection="none">
+    CANCEL
+  </ion-button>
+
+</ion-content>

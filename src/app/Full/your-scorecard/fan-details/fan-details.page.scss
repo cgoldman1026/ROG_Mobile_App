@@ -1,0 +1,128 @@
+// BEGIN IOS STYLE SHEET
+.ios .title {
+    font-size: 2.75vh;
+    margin-bottom: 2.5vh;
+}
+
+.ios .firstInputItem {
+    margin-top: 1vh;
+    margin-bottom: -2vh;
+}
+
+.ios .inputItem {
+    margin-bottom: -2vh;
+    margin-top: 0vh;
+}
+
+.ios .lastInputItem {
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+}
+
+.ios .inputField {
+    margin-top: -7.5vh;
+    margin-bottom: -4.5vh;
+    font-size: 5vw;
+}
+
+.ios .inputLabel {
+    color: var(--ion-color-tertiary);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 4vw;
+}
+
+.ios .editButton {
+    color: var(--ion-color-secondary);
+    font-size: 7vw;
+    margin-right: 0vw;
+}
+
+.ios .deleteButton {
+    color: var(--ion-color-danger);
+    font-size: 7vw;
+    margin-right: 0vw;
+}
+
+
+// END IOS STYLE SHEET
+
+
+
+// BEGIN MD STYLE SHEET
+.md .title {
+    font-size: 3.75vh;
+    margin-left: 1vw;
+    margin-bottom: 2.25vh;
+}
+
+.md .firstInputItem {
+    margin-bottom: -0.5vh;
+    margin-top: -1vh;
+}
+
+.md .inputItem {
+    margin-bottom: -0.5vh;
+    margin-top: -1.5vh;
+}
+
+.md .lastInputItem {
+    margin-top: -1.5vh;
+    margin-bottom: 0vh;
+}
+
+.md .inputField {
+    margin-bottom: 0vh;
+    margin-top: -0.5vh;
+    font-size: 5vw;
+}
+
+.md .inputLabel {
+    color: var(--ion-color-tertiary);
+    margin-top: -0.25vh;
+    margin-bottom: 0.5vh;
+    font-size: 5.5vw;
+}
+
+
+.md .editButton {
+    color: var(--ion-color-secondary);
+    font-size: 7vw;
+    margin-right: 0vw;
+    margin-top: 2vh;
+}
+
+.md .deleteButton {
+    color: var(--ion-color-danger);
+    font-size: 7vw;
+    margin-right: 0vw;
+    margin-top: 2vh;
+}
+
+// END MD STYLE SHEET
+
+
+
+// BEGIN GENERAL STYLE SHEET
+#list {
+    margin-bottom: -8vh;
+}
+
+.card {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+
+#noFans {
+    color: var(--ion-color-tertiary);
+}
+
+#noFansHolder {
+    margin-top: 8vh;
+    font-size: 6vw;
+    text-align: center;
+}
+
+// END GENERAL STYLE SHEET
+

@@ -1,5 +1,7 @@
 {
   "name": "Reaching-Our-Goal-Scrap",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

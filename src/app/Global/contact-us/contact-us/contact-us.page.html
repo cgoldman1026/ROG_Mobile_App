@@ -1,0 +1,177 @@
+<ion-header class='ion-text-center' translucent="true" id="header">
+  <ion-toolbar id='toolbar'>
+    <ion-title id="title">Contact Us</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <form [formGroup]="form">
+    <ion-grid>
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="firstInputItem" lines="none">
+            <ion-label position="floating" color="primary" class="inputLabel">
+              * Your Full Name
+            </ion-label>
+            <ion-input formControlName="fullName" type="text" class="inputField" placeholder='John Smith' autofocus="true">
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItem" lines="none">
+            <ion-label position="floating" color="primary" class="inputLabel">
+              * Your Email Address
+            </ion-label>
+            <ion-input formControlName="emailAddress" type="text" class="inputField"
+              placeholder='johnsmith@gmail.com' type="email" email (ionFocus)="toggleEmailAddressFocused()">
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItem" lines="none">
+            <ion-label position="floating" color="primary" class="inputLabel">
+              Your Mobile Number
+            </ion-label>
+            <ion-input formControlName="mobileNumber" type="tel" class="inputField" appPhoneMask
+              placeholder="(123) 456-7890" (ionFocus)="toggleMobileNumberFocused()" minlength="14">
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItem" lines="none">
+            <ion-label position="floating" color="primary" class="inputLabel">
+              * Your Team or Organization
+            </ion-label>
+            <ion-input formControlName="teamName" type="text" class="inputField"
+              placeholder="SmithTown High School">
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItem" lines="none">
+            <ion-label class="inputLabel" position="floating" color="primary">
+              * Your Message
+            </ion-label>
+            <ion-textarea formControlName="message" type="text" rows="6" maxlength="350"
+              placeholder="Enter message here..." class="inputField" (ionFocus)="toggleMessageFocused()">
+            </ion-textarea>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col size="6">
+          <ion-item lines="none" class="warningHolder">
+            <p [ngClass]="{
+              'regular': form.valid || form.invalid,
+              'danger':  !form.valid && (form.get('fullName') && !form.get('fullName').valid && form.get('fullName').touched || form.get('emailAddress') && !form.get('emailAddress').valid && form.get('emailAddress').touched || form.get('mobileNumber') && !form.get('mobileNumber').valid && form.get('mobileNumber').touched || form.get('teamName') && !form.get('teamName').valid && form.get('teamName').touched || form.get('message') && !form.get('message').valid && form.get('message').touched)
+             }">
+              * Required
+            </p>
+          </ion-item>
+        </ion-col>
+
+        <ion-col id="counter-col">
+          <ion-item lines="none" class='counterHolder'>
+            <p class='regular'>
+              Characters: {{ form.get('message').value ? form.get('message').value.length : 0 }}/350
+            </p>
+          </ion-item>
+        </ion-col>
+      
+      
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="ion-no-padding">
+          
+          <!-- <ion-item lines="none" class='warningHolder'>
+            <p class="danger">
+              Tester Number 1
+            </p>
+          </ion-item>
+
+          <ion-item lines="none" class='warningHolder'>
+            <p class="danger">
+              Tester Number 2
+            </p>
+          </ion-item> -->
+
+          <ion-item lines="none" class='warningHolder' *ngIf="form.get('emailAddress').invalid && form.get('emailAddress').touched && this.emailAddressFocused">
+            <p class="danger">
+              &nbsp;&nbsp;&nbsp;Please enter a valid email address.
+            </p>
+          </ion-item>
+          
+          
+          <ion-item class='warningHolder' lines="none" *ngIf="form.get('mobileNumber').invalid && form.get('mobileNumber').touched && this.mobileNumberFocused">
+            <p class="danger">
+              &nbsp;&nbsp;&nbsp;Please enter a valid mobile number.
+            </p>
+          </ion-item>
+          
+          
+          <ion-item class='warningHolder' lines="none" *ngIf="form.get('message').invalid && form.get('message').touched && this.messageFocused">
+            <p class="danger">
+              &nbsp;&nbsp;&nbsp;Please enter a valid message.
+            </p>
+          </ion-item>
+        
+        
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="onSubmit(form)" [disabled]="!form.valid"
+          [ngClass]="{
+            'smallButtonFixed': this.platformHeight > 750,
+            'smallButtonRelative':  this.platformHeight <= 750
+           }">
+            SUBMIT
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class='ion-text-center'>
+        <ion-col>
+          <ion-button [ngClass]="{
+            'cancelFixed': this.platformHeight > 750,
+            'cancelRelative':  this.platformHeight <= 750
+           }" fill="clear" color="danger" [routerLink]="[this.originURL]" routerDirection='back'>
+            CANCEL
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+
+    </ion-grid>
+  </form>
+
+
+</ion-content>

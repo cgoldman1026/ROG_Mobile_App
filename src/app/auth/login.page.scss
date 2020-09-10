@@ -1,0 +1,98 @@
+// BEGIN IOS STYLE SHEET
+.ios .inputItem {
+  width: 95vw;
+  margin-left: -1vw;
+}
+
+.ios #forgotPassword {
+  font-size: 4.5vw;
+}
+
+.ios .inputWarning {
+  margin-left: 5vw;
+  color: var(--ion-color-danger);
+  font-size: 4.25vw;
+}
+
+// END IOS STYLE SHEET
+
+
+
+// BEGIN MD STYLE SHEET
+.md .inputItem {
+  width: 100vw;
+  margin-left: -1vw;
+}
+
+.md .inputWarning {
+  margin-left: 3.25vw;
+  color: var(--ion-color-danger);
+  font-size: 4.25vw;
+}
+
+.md #forgotPassword {
+  font-size: 4.5vw;
+  margin-left: -2vw;
+}
+
+
+// END MD STYLE SHEET
+
+
+
+
+// BEGIN GENERAL STYLE SHEET
+ion-header::after {
+  background-image: none;
+}
+
+#headerText {
+  font-size: 4.4vh;
+}
+
+#headerColumn {
+  text-align: center;
+}
+
+.inputLabel {
+  color: var(--ion-color-tertiary);
+  font-size: 5vw;
+}
+
+.inputField {
+  --color: var(--ion-color-primary);
+  font-size: 2.75vh;
+}
+
+.inputWarningRow {
+  margin-bottom: 2vh;
+}
+
+
+.largeButton {
+  bottom: 16vh;
+}
+
+#no_account {
+  position: fixed;
+  bottom: 7.5vh;
+  width: 95vw;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  font-size: 5.5vw;
+  font-weight: bold;
+  align-items: center;
+}
+
+.bottomMiddleButton {
+  color: var(--ion-color-tertiary);
+  bottom: 1.5vh;
+}
+
+// END GENERAL STYLE SHEET
+
+
+
+
+
+

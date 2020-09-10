@@ -1,0 +1,220 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CAPNetworkPlugin"
+provides-nominal:
+- "9Capacitor16CAPNetworkPluginC"
+provides-member:
+- ["9Capacitor16CAPNetworkPluginC", ""]
+provides-dynamic-lookup:
+- "getStatus"
+- "load"
+- "notifyStatusChangeListeners"
+- "reachability"
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- !private "CAPLog"
+- "CAPNetworkPlugin"
+- "CAPPlugin"
+- "CAPPluginCall"
+- "Reachability"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- !private ["9Capacitor6CAPLogC", "print"]
+- ["9Capacitor16CAPNetworkPluginC", "Bool"]
+- !private ["9Capacitor16CAPNetworkPluginC", "CAPLog"]
+- ["9Capacitor16CAPNetworkPluginC", "CAPPluginCall"]
+- ["9Capacitor16CAPNetworkPluginC", "Reachability"]
+- ["9Capacitor16CAPNetworkPluginC", "String"]
+- ["9Capacitor16CAPNetworkPluginC", "deinit"]
+- ["9Capacitor16CAPNetworkPluginC", "getStatus"]
+- ["9Capacitor16CAPNetworkPluginC", "init"]
+- ["9Capacitor16CAPNetworkPluginC", "load"]
+- !private ["9Capacitor16CAPNetworkPluginC", "notifyListeners"]
+- ["9Capacitor16CAPNetworkPluginC", "notifyStatusChangeListeners"]
+- ["9Capacitor16CAPNetworkPluginC", "reachability"]
+- ["So9CAPPluginC", "Bool"]
+- !private ["So9CAPPluginC", "CAPLog"]
+- ["So9CAPPluginC", "CAPPluginCall"]
+- ["So9CAPPluginC", "Reachability"]
+- ["So9CAPPluginC", "String"]
+- ["So9CAPPluginC", ""]
+- ["So9CAPPluginC", "getStatus"]
+- ["So9CAPPluginC", "init"]
+- ["So9CAPPluginC", "load"]
+- !private ["So9CAPPluginC", "notifyListeners"]
+- ["So9CAPPluginC", "notifyStatusChangeListeners"]
+- ["So9CAPPluginC", "reachability"]
+- !private ["So13CAPPluginCallC", "success"]
+- !private ["s7CVarArgP", "CAPLog"]
+- ["s7CVarArgP", "Reachability"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "notifyListeners"]
+- !private ["s7CVarArgP", "notifyStatusChangeListeners"]
+- !private ["s7CVarArgP", "reachability"]
+- !private ["s7CVarArgP", "success"]
+- !private ["9Capacitor12ReachabilityC10ConnectionO", "cellular"]
+- !private ["9Capacitor12ReachabilityC10ConnectionO", "deinit"]
+- !private ["9Capacitor12ReachabilityC10ConnectionO", "wifi"]
+- !private ["s28CustomDebugStringConvertibleP", "CAPLog"]
+- ["s28CustomDebugStringConvertibleP", "Reachability"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "notifyListeners"]
+- !private ["s28CustomDebugStringConvertibleP", "notifyStatusChangeListeners"]
+- !private ["s28CustomDebugStringConvertibleP", "reachability"]
+- !private ["s28CustomDebugStringConvertibleP", "success"]
+- !private ["s23CustomStringConvertibleP", "CAPLog"]
+- ["s23CustomStringConvertibleP", "Reachability"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "cellular"]
+- !private ["s23CustomStringConvertibleP", "notifyListeners"]
+- !private ["s23CustomStringConvertibleP", "notifyStatusChangeListeners"]
+- !private ["s23CustomStringConvertibleP", "reachability"]
+- !private ["s23CustomStringConvertibleP", "success"]
+- !private ["s23CustomStringConvertibleP", "wifi"]
+- !private ["SQ", "CAPLog"]
+- ["SQ", "Reachability"]
+- ["SQ", ""]
+- !private ["SQ", "cellular"]
+- !private ["SQ", "notifyListeners"]
+- !private ["SQ", "notifyStatusChangeListeners"]
+- !private ["SQ", "reachability"]
+- !private ["SQ", "success"]
+- !private ["SQ", "wifi"]
+- !private ["SH", "CAPLog"]
+- ["SH", "Reachability"]
+- ["SH", ""]
+- !private ["SH", "cellular"]
+- !private ["SH", "notifyListeners"]
+- !private ["SH", "notifyStatusChangeListeners"]
+- !private ["SH", "reachability"]
+- !private ["SH", "success"]
+- !private ["SH", "wifi"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "CAPLog"]
+- ["So8NSObjectC", "CAPPluginCall"]
+- ["So8NSObjectC", "Reachability"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "getStatus"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "load"]
+- !private ["So8NSObjectC", "notifyListeners"]
+- ["So8NSObjectC", "notifyStatusChangeListeners"]
+- ["So8NSObjectC", "reachability"]
+- !private ["So8NSObjectC", "success"]
+- !private ["So8NSObjectP", "CAPLog"]
+- ["So8NSObjectP", "Reachability"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "notifyListeners"]
+- !private ["So8NSObjectP", "notifyStatusChangeListeners"]
+- !private ["So8NSObjectP", "reachability"]
+- !private ["So8NSObjectP", "success"]
+- !private ["9Capacitor12ReachabilityC", "connection"]
+- ["9Capacitor12ReachabilityC", "init"]
+- !private ["9Capacitor12ReachabilityC", "startNotifier"]
+- !private ["9Capacitor12ReachabilityC", "whenReachable"]
+- !private ["9Capacitor12ReachabilityC", "whenUnreachable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CAPLog"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Reachability"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "notifyListeners"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "notifyStatusChangeListeners"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reachability"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "success"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CAPLog"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Reachability"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "notifyListeners"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "notifyStatusChangeListeners"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reachability"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "success"]
+depends-nominal:
+- !private "9Capacitor6CAPLogC"
+- "9Capacitor16CAPNetworkPluginC"
+- "So9CAPPluginC"
+- !private "So13CAPPluginCallC"
+- "s7CVarArgP"
+- !private "9Capacitor12ReachabilityC10ConnectionO"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "SH"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "9Capacitor12ReachabilityC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMIDI.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMedia.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/simd.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/AVFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreAudio.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Photos.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDV.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/Pods/Target Support Files/CapacitorCordova/CapacitorCordova-umbrella.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/Pods/Target Support Files/Capacitor/Capacitor-umbrella.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVInvokedUrlCommand.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/CAPPluginMethod.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/Plugins/Keyboard.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVCommandDelegate.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVScreenOrientationDelegate.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/AppDelegate.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVUIWebViewDelegate.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVUserAgentUtil.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/CAPPluginCall.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVURLProtocol.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVCommandDelegateImpl.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/CAPPlugin.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVPlugin.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/CAPBridgedPlugin.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVPluginManager.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVViewController.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVConfigParser.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/Capacitor.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/NSDictionary+CordovaPreferences.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/Plugins/DefaultPlugins.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVPluginResult.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVAvailability.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/DerivedData/App/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/unextended-module.modulemap"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/DerivedData/App/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCordova.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/SafariServices.framework/Headers/SafariServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Photos.framework/Headers/Photos.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "934d3f8e2eb99ec5f38e9928ebb988e2"

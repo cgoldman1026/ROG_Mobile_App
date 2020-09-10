@@ -1,0 +1,103 @@
+// BEGIN IOS STYLE SHEET
+.ios .fullTitle {
+    margin-left: 0vw;
+    font-size: 3.15vh;
+}
+
+
+// END IOS STYLE SHEET
+
+
+// BEGIN MD STYLE SHEET
+
+.md .fullTitle {
+    margin-left: 4vw;
+    font-size: 3.75vh;
+}
+
+
+// END MD STYLE SHEET
+
+
+// BEGIN GLOBAL STYLE SHEET
+#yourReward {
+    color: var(--ion-color-secondary);
+    font-size: 6.5vw;
+}
+
+#theReward {
+    color: var(--ion-color-primary);
+    font-size: 5.5vw;
+}
+
+#thumbnail {
+    position: fixed;
+    bottom: 15vh;
+    width: 30vw;
+    height: 60vh;
+    border: 1px solid var(--ion-color-primary);
+    margin-left: 6vw;
+    margin-top: 4vh;
+}
+
+.progressBar {
+    position: fixed;
+    bottom: 15vh;
+    width: 30vw;
+    height: 30vh;
+    background-color: var(--ion-color-secondary);
+    margin-left: 6vw;
+    margin-top: 4vh;
+    z-index: 1000;
+}
+
+#zero {
+    position: fixed;
+    bottom: 12vh;
+    left: 41vw;
+    font-size: 7vw;
+    color: var(--ion-color-tertiary);
+}
+
+.numSupporters {
+    position: fixed;
+    left: 41vw;
+    font-size: 7vw;
+    color: var(--ion-color-secondary);
+
+}
+
+#didIt {
+    position: fixed;
+    left: 41vw;
+    font-size: 7vw;
+    color: var(--ion-color-secondary);
+    bottom: 42vh;
+}
+
+.fifteen {
+    position: fixed;
+    bottom: 72.5vh;
+    left: 41vw;
+    font-size: 7vw;
+    color: var(--ion-color-tertiary);
+}
+
+.fifteenSmall {
+    position: fixed;
+    bottom: 71vh;
+    left: 41vw;
+    font-size: 7vw;
+    color: var(--ion-color-tertiary);
+}
+
+.largeButton {
+    bottom: 2vh;
+}
+
+// END GLOBAL STYLE SHEET
+
+
+
+
+

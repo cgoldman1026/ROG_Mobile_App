@@ -1,0 +1,132 @@
+<ion-toolbar>
+  <ion-buttons slot="primary">
+    <ion-button id='x' (click)='dismiss()'>
+      <ion-icon name="close-outline" color="tertiary"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title id="sectionTitle">Edit Fan</ion-title>
+</ion-toolbar>
+
+<ion-content>
+  <ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-item class="inputItemStack" lines="none">
+        <ion-label color="primary" class="inputLabelStack">
+          * Fan's First Name:
+        </ion-label>
+        <ion-input class="inputFieldStack" autocapitalize="words" autocomplete="on" formControlName="fanFirstName"
+          type="text" maxlength="25" placeholder='John' enterkeyhint="next" autofocus="true" [(ngModel)]='fanFirstName'>
+        </ion-input>
+      </ion-item>
+      <ion-item class="inputItemStack" lines="none">
+        <ion-label color="primary">
+          * Fan's Last Name:
+        </ion-label>
+        <ion-input class="inputFieldStack" autocapitalize="words" autocomplete="on" formControlName="fanLastName"
+          type="text" maxlength="30" placeholder='Smith' enterkeyhint="next" [(ngModel)]='fanLastName'>
+        </ion-input>
+      </ion-item>
+      <ion-item class="inputItemSelect" lines="none">
+        <ion-label color="primary">
+          * Relationship:
+        </ion-label>
+        <ion-select formControlName="fanRelationship" (ionBlur)="getSalutation()" placeholder="Select Relationship...">
+          <ion-select-option *ngFor="let relationship of relationships" [value]="relationship">
+            {{relationship}}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item class="inputItemStack" lines="none">
+        <ion-label color="primary">
+          * Salutation:
+        </ion-label>
+        <ion-label color="tertiary" id="dear">
+          Dear
+        </ion-label>
+        <ion-input class="inputFieldStack" formControlName="fanSalutation" placeholder="Uncle John" [(ngModel)]="salutation"></ion-input>
+      </ion-item>
+      <ion-item class="inputItemStack" lines="none">
+        <ion-label color="primary">
+          Fan's Email:
+        </ion-label>
+        <ion-input placeholder='johnsmith@email.com' class="inputFieldStack" autocomplete="email"
+          formControlName="fanEmailAddress" type="email" email></ion-input>
+      </ion-item>
+      <ion-item class="inputItemStack" lines="none">
+        <ion-label color="primary">
+          Fan's Mobile #:
+        </ion-label>
+        <ion-input placeholder='(123)-456-7890' class="inputFieldStack" autocomplete="tel"
+          formControlName="fanMobileNumber" type="tel" tel></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding">
+      <ion-item lines="none" class="warningHolder">
+        <p id="oneMethod">
+        One contact method is OK, two is even better!
+      </p>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding">
+      <ion-item lines="none" class="warningHolder">
+        <p [ngClass]="{
+          'regular': !form.valid || form.valid,
+          'danger':  !form.valid && (!form.get('fanFirstName').valid && form.get('fanFirstName').touched || !form.get('fanLastName').valid && form.get('fanLastName').touched || !form.get('fanEmailAddress').valid && form.get('fanEmailAddress').touched || !form.get('fanMobileNumber').valid && form.get('fanMobileNumber').touched)
+         }">
+          *Required
+        </p>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding">
+      <ion-item class="warningHolder" lines="none"
+        *ngIf="form.get('fanRelationship').touched && form.get('fanRelationship').invalid && form.get('fanRelationship').dirty">
+        <p class="danger">
+          Please select a valid relationship for your fan.
+        </p>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding">
+      <ion-item class="warningHolder" lines="none"
+        *ngIf="form.get('fanSalutation').touched && form.get('fanSalutation').invalid && form.get('fanSalutation').dirty">
+        <p class="danger">
+          Please enter a valid salutation for your fan.
+        </p>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding">
+      <ion-item class="warningHolder" lines="none"
+        *ngIf="form.get('fanEmailAddress').touched && form.get('fanEmailAddress').invalid && form.get('fanEmailAddress').dirty">
+        <p class="danger">
+          Please enter a valid email address for your fan.
+        </p>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding">
+      <ion-item class="warningHolder" lines="none"
+        *ngIf="form.get('fanMobileNumber').touched && form.get('fanMobileNumber').invalid && form.get('fanMobileNumber').dirty">
+        <p class="danger">
+          Please enter a valid mobile number for your fan.
+        </p>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+  <ion-button (click)='dismiss()'>
+    CLOSE
+  </ion-button>
+
+</ion-content>

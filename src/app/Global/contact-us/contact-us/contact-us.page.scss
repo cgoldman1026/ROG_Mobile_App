@@ -1,0 +1,306 @@
+// BEGIN IOS STYLE SHEET
+
+.ios#header {
+    margin-bottom: 0vh;
+}
+
+#toolbar {
+    height: 8vh;
+}
+
+.ios #title {
+    font-size: 7vw;
+    color: var(--ion-color-secondary);
+    margin-top: 1vh;
+}
+
+.ios .firstInputItem {
+    width: 98vw;
+    margin-bottom: -.25vh;
+    margin-top: 2vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+.ios .inputItem {
+    width: 98vw;
+    margin-bottom: -.25vh;
+    margin-top: -0.25vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+.ios .inputLabel {
+    font-size: 5vw;
+    margin-bottom: -1vh;
+    margin-top: 0.25vh;
+}
+
+.ios .inputField {
+    --placeholder-color: var(--ion-color-tertiary);
+    --placeholder-opacity: 30%;
+    --color: var(--ion-color-secondary);
+    margin-top: 0vh;
+}
+
+.ios .warningHolder {
+    margin-left: 0vw;
+    margin-top: -2vh;
+    margin-bottom: -2vh;
+    margin-right: 1vw;
+    padding: 0;
+    --background: transparent;
+}
+
+.ios .counterHolder {
+    margin-left: 0vw;
+    margin-top: -2vh;
+    margin-bottom: -2vh;
+    margin-right: 0vw;
+    padding: 0;
+    --background: transparent; 
+}
+
+
+.ios .smallButtonRelative {
+    width: 60vw;
+    height: 7vh;
+    position: relative;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    margin-left: 17.25vw;
+    margin-right: 20vw;
+    --background: var(--ion-color-secondary);
+    --border-radius: 2px;
+    --box-shadow: 3px 3px 5px var(--ion-color-tertiary);
+    --background-activated: var(--ion-color-secondary-shade);
+    font-size: 6vw;
+}
+
+.ios .cancelRelative {
+    position: relative;
+    font-size: 5.5vw;
+    margin-top: 0vh;
+}
+
+.ios .smallButtonFixed {
+    width: 60vw;
+    height: 7vh;
+    position: fixed;
+    bottom: 8vh;
+    margin-left: 17.25vw;
+    margin-right: 20vw;
+    --background: var(--ion-color-secondary);
+    --border-radius: 2px;
+    --box-shadow: 3px 3px 5px var(--ion-color-tertiary);
+    --background-activated: var(--ion-color-secondary-shade);
+    font-size: 6vw;
+}
+
+.ios .cancelFixed {
+    position: fixed;
+    font-size: 5.5vw;
+    margin-top: 0vh;
+    bottom: 1vh;
+    margin-left: -16.5vw;
+
+}
+
+
+
+// END IOS STYLE SHEET
+
+
+
+
+// BEGIN MD STYLE SHEET
+
+.md#header {
+    margin-bottom: -2vh;
+}
+
+.md #title {
+    font-size: 7vw;
+    color: var(--ion-color-secondary);
+    margin-top: 1.5vh;
+}
+
+.md .firstInputItem {
+    width: 100vw;
+    margin-bottom: -.25vh;
+    margin-top: 1.25vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+.md .inputItem {
+    width: 100vw;
+    margin-bottom: -.25vh;
+    margin-top: -0.25vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+.md .inputLabel {
+    font-size: 5vw;
+    margin-bottom: 0.5vh;
+    margin-top: 0.25vh;
+}
+
+.md .inputField {
+    --placeholder-color: var(--ion-color-tertiary);
+    --placeholder-opacity: 30%;
+    --color: var(--ion-color-secondary);
+}
+
+.md .warningHolder {
+    margin-left: 0vw;
+    margin-top: -2vh;
+    margin-bottom: -2vh;
+    margin-right: 1vw;
+    padding: 0;
+    --background: transparent;
+}
+
+.md .counterHolder {
+    margin-left: 0vw;
+    margin-top: -2vh;
+    margin-bottom: -2vh;
+    margin-right: 0vw;
+    padding: 0;
+    --background: transparent; 
+}
+
+
+.md .smallButtonRelative {
+    width: 60vw;
+    height: 7vh;
+    position: relative;
+    margin-left: 17.25vw;
+    margin-right: 20vw;
+    --background: var(--ion-color-secondary);
+    --border-radius: 2px;
+    --box-shadow: 3px 3px 5px var(--ion-color-tertiary);
+    --background-activated: var(--ion-color-secondary-shade);
+    font-size: 6vw;
+}
+
+.md .cancelRelative {
+    position: relative;
+    font-size: 5.5vw;
+    margin-top: 0vh;
+}
+
+.md .smallButtonFixed {
+    width: 60vw;
+    height: 7vh;
+    position: fixed;
+    bottom: 8vh;
+    margin-left: 17.25vw;
+    margin-right: 20vw;
+    --background: var(--ion-color-secondary);
+    --border-radius: 2px;
+    --box-shadow: 3px 3px 5px var(--ion-color-tertiary);
+    --background-activated: var(--ion-color-secondary-shade);
+    font-size: 6vw;
+}
+
+.md .cancelFixed {
+    position: fixed;
+    font-size: 5.5vw;
+    margin-top: 0vh;
+    bottom: 1vh;
+    margin-left: -18vw;
+}
+
+
+// END MD STYLE SHEET
+
+
+
+// BEGIN GENERAL STYLE SHEET
+
+
+
+
+.regular {
+    font-size: 4vw;
+    color: var(--ion-color-primary);
+}
+
+.danger {
+    font-size: 4vw;
+    color: var(--ion-color-danger)
+}
+
+
+
+// END GENERAL STYLE SHEET
+
+
+
+
+
+
+
+
+// #closeButton {
+//     z-index: 1;
+// }
+
+// #toolbar {
+//     --min-height: 80px !important;
+//     --border-color: var(--ion-color-secondary);
+
+// }
+
+// #x {
+//     position: absolute;
+//     top: -20px;
+//     right: -20px;
+// }
+
+// #cancel {
+//     position: fixed;
+//     left: 0;
+//     bottom: 10px;
+//     right: 0;
+// }
+
+// ion-text-area {
+//     margin-bottom: 0px;
+//     padding-bottom: 0px;
+// }
+
+// #required {
+//     margin-top: 0px;
+//     padding-top: 0px;
+//     padding-left: 17px;
+//     padding-bottom: 0px;
+//     .danger {
+//         color: var(--ion-color-danger);
+//     }
+//     .regular {
+//         color: var(--ion-color-primary);
+//     }
+// }
+
+// #required-col {
+//     padding-bottom: 0px;
+// }
+
+// #counter-col {
+//     padding-bottom: 0px;
+// }
+
+// #counter {
+//     margin-top: 0px;
+//     padding-top: 0px;
+//     padding-right: 5px;
+//     padding-bottom: 0px;
+//     color: var(--ion-color-tertiary)
+// }

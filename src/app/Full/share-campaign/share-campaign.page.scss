@@ -1,0 +1,33 @@
+.md .fullTitle {
+    margin-left: 7vw;
+}
+
+.ios .fullTitle {
+    margin-left: 0vw;
+}
+
+ion-label {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ion-tab-button {
+    --color: var(--ion-color-primary);
+    --color-selected: var(--ion-color-secondary);
+}
+
+#bar {
+    --border: 0;
+    margin-top: 1vh;
+    margin-left: -4vw;
+    margin-bottom: -1.5vh;
+}
+
+
+// ion-tab-bar {
+
+//     padding-top: 1vh;
+//     margin-left: -10vw;
+//     margin: 0vw;
+// }

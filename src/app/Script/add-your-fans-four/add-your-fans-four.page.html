@@ -1,0 +1,201 @@
+<ion-header class="scriptHeader">
+  <ion-title class="scriptStackedSubHeaderTitle">
+    Step 3
+  </ion-title>
+  <ion-title class="scriptStackedHeaderTitle">
+    ADD YOUR FANS
+  </ion-title>
+</ion-header>
+
+<ion-content class="no-scroll">
+  <form [formGroup]="form">
+    <ion-grid class="ion-no-padding">
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding ion-text-center">
+          <ion-text class="ion-text-center">
+            <h1 class="supporterType">
+              {{relationship}}
+            </h1>
+            <h3 class="atLeastOne">
+              You must add at least one!
+            </h3>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+
+          <ion-item class="firstInputItem" lines="none">
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight < 735">
+              * Fan's First Name:
+            </ion-label>
+            <ion-label color="primary" class="inputLabelFloating" *ngIf="this.platformHeight >= 735"
+              position='floating'>
+              * Fan's First Name
+            </ion-label>
+            <ion-input class="inputFieldStack" autocapitalize="words" autocomplete="on" formControlName="fanFirstName"
+              type="text" maxlength="25" placeholder='John' enterkeyhint="next" autofocus="true" (ionBlur)='updateSalutation()'>
+            </ion-input>
+          </ion-item>
+
+
+          <ion-item class="inputItem" lines="none">
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight < 735">
+              * Fan's Last Name:
+            </ion-label>
+            <ion-label color="primary" class="inputLabelFloating" *ngIf="this.platformHeight >= 735"
+              position='floating'>
+              * Fan's Last Name
+            </ion-label>
+            <ion-input class="inputFieldStack" autocapitalize="words" autocomplete="on" formControlName="fanLastName"
+              type="text" maxlength="30" placeholder='Smith' enterkeyhint="next" (ionBlur)='updateSalutation()'>
+            </ion-input>
+          </ion-item>
+
+
+          <ion-item class="inputItem" lines="none">
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight < 735">
+              * Relationship:
+            </ion-label>
+            <ion-label color="primary" class="inputLabelFloating" *ngIf="this.platformHeight >= 735"
+              position='floating'>
+              * Relationship
+            </ion-label>
+            <ion-select formControlName="fanRelationship" (ionBlur)="getSalutation()"
+              placeholder="Select Relationship...">
+              <ion-select-option *ngFor="let relationship of relationships" [value]="relationship">
+                <span>{{relationship}}</span>
+              </ion-select-option>
+            </ion-select>
+          </ion-item>
+
+
+          <ion-item class="inputItem" lines="none">
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight < 665">
+              * Salutation:
+            </ion-label>
+            <ion-label color="primary" class="inputLabelFloating" *ngIf="this.platformHeight >= 665"
+              position='floating'>
+              * Fan's Salutation (you can edit this!)
+            </ion-label>
+            <ion-input class="inputFieldStack" formControlName="fanSalutation" placeholder='Uncle John'
+              (ionFocus)="toggleSalutationFocus()" [value]="this.salutation" ><span slot='start'>
+                &nbsp;Dear&nbsp;
+              </span></ion-input>
+          </ion-item>
+
+
+
+          <ion-item class="inputItem" lines="none">
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight < 735">
+              Fan's Mobile #:
+            </ion-label>
+            <ion-label color="primary" class="inputLabelFloating" *ngIf="this.platformHeight >= 735"
+              position='floating'>
+              Fan's Mobile Number
+            </ion-label>
+            <ion-input placeholder='(123) 456-7890' class="inputFieldStack" autocomplete="tel"
+              formControlName="fanMobileNumber" type="tel" minlength="14" appPhoneMask></ion-input>
+          </ion-item>
+
+
+
+          <ion-item class="inputItem" lines="none">
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight < 735">
+              Fan's Email:
+            </ion-label>
+            <ion-label color="primary" class="inputLabelFloating" *ngIf="this.platformHeight >= 735"
+              position='floating'>
+              Fan's Email Address
+            </ion-label>
+            <ion-input placeholder='johnsmith@email.com' class="inputFieldStack" autocomplete="email"
+              formControlName="fanEmailAddress" type="email" email (ionFocus)="toggleEmailFocus()"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+          <ion-item lines="none" class="warningHolder">
+            <p class='oneMethodIncomplete'>
+              * One contact method is required, two is even better!
+            </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      
+      
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+          <ion-item lines="none" class="warningHolder">
+            <p [ngClass]="{
+              'regular': !form.valid || form.valid,
+              'danger':  !form.valid && (!form.get('fanFirstName').valid && form.get('fanFirstName').touched || !form.get('fanLastName').valid && form.get('fanLastName').touched || !form.get('fanEmailAddress').valid && form.get('fanEmailAddress').touched || !form.get('fanMobileNumber').valid && form.get('fanMobileNumber').touched)
+             }">
+              * Required
+            </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+     
+     
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+          <ion-item class="warningHolder" lines="none"
+            *ngIf="form.get('fanSalutation').touched && form.get('fanSalutation').invalid && form.get('fanSalutation').dirty && this.salutationFocused">
+            <p class="danger">
+              Please enter a valid salutation for your fan.
+            </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+     
+     
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+          <ion-item class="warningHolder" lines="none"
+            *ngIf="form.get('fanMobileNumber').touched && form.get('fanMobileNumber').invalid && form.get('fanMobileNumber').dirty && this.mobileNumberFocused">
+            <p class="danger">
+              Please enter a valid mobile number for your fan.
+            </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      
+      
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+          <ion-item class="warningHolder" lines="none"
+            *ngIf="form.get('fanEmailAddress').touched && form.get('fanEmailAddress').invalid && form.get('fanEmailAddress').dirty && this.emailAddressFocused">
+            <p class="danger">
+              Please enter a valid email address for your fan.
+            </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <ion-button (click)="onAddFan(form)" class="largeButton" routerDirection="forward" [disabled]="form.invalid">
+      ADD FAN
+    </ion-button>
+
+    <ion-button fill="clear" color="danger" class="bottomLeftButton" routerLink="/script/add-your-fans-three"
+      routerDirection="back">
+      BACK
+    </ion-button>
+
+    <ion-button fill="clear" color="secondary" class="bottomMiddleButton" (click)="presentFansModal()">
+      FANS
+    </ion-button>
+
+    <ion-button fill="clear" color="tertiary" class="bottomRightButton" (click)="presentHelpModal()">
+      HELP
+    </ion-button>
+
+
+  </form>
+
+
+</ion-content>

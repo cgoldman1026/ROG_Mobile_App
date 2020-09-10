@@ -1,0 +1,152 @@
+// BEGIN IOS STYLE SHEET
+.ios .fullTitle {
+    margin-left: 0vw;
+}
+
+.ios .inputItem {
+    margin-bottom: -2vh;
+    margin-top: 0vh;
+}
+
+.ios .lastInputItem {
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+}
+
+.ios .inputLabel {
+    color: var(--ion-color-tertiary);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 4vw;
+}
+
+.ios .inputField {
+    margin-top: -7.5vh;
+    margin-bottom: -5vh;
+    font-size: 5vw;
+}
+
+.ios .editButton {
+    color: var(--ion-color-secondary);
+    font-size: 7vw;
+    margin-right: 0vw;
+}
+
+.ios .deleteButton {
+    color: var(--ion-color-danger);
+    font-size: 7vw;
+    margin-right: 0vw;
+}
+
+
+// END IOS STYLE SHEET
+
+
+// BEGIN MD STYLE SHEET
+.md .fullTitle {
+    margin-left: 15vw;
+}
+
+.md .inputItem {
+    margin-bottom: -1vh;
+    margin-top: -1.5vh;
+}
+
+.md .lastInputItem {
+    margin-top: 0vh;
+    margin-bottom: 1vh;
+    font-size: 5vw;
+}
+
+.md .inputField {
+    margin-bottom: -0.10vh;
+    margin-top: -0.5vh;
+    font-size: 5vw;
+}
+
+.md .inputLabel {
+    color: var(--ion-color-tertiary);
+    margin-top: -0.25vh;
+    margin-bottom: 0.5vh;
+    font-size: 5.5vw;
+}
+
+
+.md .editButton {
+    color: var(--ion-color-secondary);
+    font-size: 7vw;
+    margin-right: 0vw;
+    margin-top: 2vh;
+}
+
+.md .deleteButton {
+    color: var(--ion-color-danger);
+    font-size: 7vw;
+    margin-right: 0vw;
+    margin-top: 2vh;
+}
+
+
+// END MD STYLE SHEET
+
+
+// BEGIN GLOBAL STYLE SHEET
+
+
+#list {
+    margin-bottom: -8vh;
+}
+
+.card {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+
+#noFans {
+    color: var(--ion-color-tertiary);
+}
+
+#noFansHolder {
+    margin-top: 8vh;
+
+    font-size: 6vw;
+    text-align: center;
+}
+
+.largeButtonFixed {
+    width: 96vw;
+    height: 7vh;
+    margin-left: 1.75vw;
+    margin-right: 2vw;
+    --background: var(--ion-color-secondary);
+    --border-radius: 2px;
+    --box-shadow: 3px 3px 5px var(--ion-color-tertiary);
+    --background-activated: var(--ion-color-secondary-shade);
+    font-size: 22px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 1.5vh;
+}
+
+.largeButtonRelative {
+    position: relative;
+    margin-top: -5.5vh;
+    margin-bottom: 2vh;
+    z-index: 1000;
+    width: 96vw;
+    height: 7vh;
+    margin-left: 1.75vw;
+    margin-right: 2vw;
+    --background: var(--ion-color-secondary);
+    --border-radius: 2px;
+    --box-shadow: 3px 3px 5px var(--ion-color-tertiary);
+    --background-activated: var(--ion-color-secondary-shade);
+    font-size: 22px;
+    position: relative;
+}
+
+
+// END GLOBAL STYLE SHEET
+
+

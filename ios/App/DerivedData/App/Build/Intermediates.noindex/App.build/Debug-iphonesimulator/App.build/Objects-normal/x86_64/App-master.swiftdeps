@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+options: "8faf1e8fa3046e514a88a5f1180cc5a1"
+build_time: [1597687994, 378265000]
+inputs:
+  "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/App/AppDelegate.swift": [1593197356, 570452171]

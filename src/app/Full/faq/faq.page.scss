@@ -1,0 +1,39 @@
+.md .fullTitle {
+    margin-left: 25vw;
+    font-size: 3.75vh;
+}
+
+.ios .fullTitle {
+    margin-left: 0vw;
+    font-size: 3.5vh;
+}
+
+.cardTitle {
+    min-height: 13vw;
+    max-height: 13vw;
+    font-size: 7vw;
+    text-align: center;
+    padding: 0vw;
+    vertical-align: center;
+}
+
+.card {
+    padding: 1vw;
+    margin: 0vw;
+}
+
+h4 {
+    font-size: 20px;
+    color: var(--ion-color-primary)
+}
+
+p {
+    font-size: 18px;
+    color: var(--ion-color-tertiary)
+}
+
+.largeButton {
+    bottom: 4%;
+}
+
+

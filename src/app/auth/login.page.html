@@ -1,0 +1,75 @@
+<ion-header class="logoHeader">
+  <img src="../../assets/white_logo.png" alt="Uh oh! We are unable to load image. Please try again later.">
+</ion-header>
+
+<ion-content class="ion-no-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col id="headerColumn">
+        <ion-text id="headerText">
+          Login To Your Profile
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <form [formGroup]="form">
+    <ion-grid class="ion-no-padding">
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItem">
+            <ion-label position="floating" class="inputLabel">
+              Email Address
+            </ion-label>
+            <ion-input class="inputField" autocomplete="on" formControlName="emailAddress" type="email">
+            </ion-input>
+          </ion-item>
+          <ion-item class="inputItem">
+            <ion-label class="inputLabel" position="floating">
+              Password
+            </ion-label>
+            <ion-input class="inputField" formControlName="password" type="password" minlength="6">
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button id="forgotPassword" fill="clear" color="tertiary" routerLink="/full/forgot-password">
+            Forgot Password?
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="inputWarningRow">
+          <ion-text class="inputWarning"
+            *ngIf="!form.get('emailAddress').valid && form.get('emailAddress').touched && !form.get('emailAddress').pristine">
+            Please enter a valid email address.
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row> 
+        <ion-col>
+          <ion-text class="inputWarning"
+            *ngIf="!form.get('password').valid && form.get('password').touched && !form.get('password').pristine && form.get('password').value.length < 6">
+            Valid passwords are at least six characters long.
+          </ion-text>
+        </ion-col>
+      </ion-row>
+
+
+    </ion-grid>
+  </form>
+
+  <ion-button (click)="onLogin()" class="largeButton" [disabled]="!form.valid" routerDirection="forward">
+    LOGIN
+  </ion-button>
+  <ion-button routerLink="/script/campaign-pin-number" id="no_account" fill="clear" color="secondary">
+    DON'T HAVE AN ACCOUNT YET?
+  </ion-button>
+  <ion-button class="bottomMiddleButton" fill="clear" (click)="presentModal()">
+    HELP
+  </ion-button>
+
+
+</ion-content>

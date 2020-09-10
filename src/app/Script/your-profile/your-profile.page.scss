@@ -1,0 +1,145 @@
+// BEGIN IOS STYLE SHEET
+
+.ios.scriptStackedHeaderTitle {
+    margin-left: -51vw;
+}
+
+
+.ios .inputLabelFloating {
+    font-size: 5vw;
+    margin-bottom: -2vh;
+    margin-top: 0.25vh;
+}
+
+.ios .inputItemStack {
+    width: 102vw;
+    margin-left: -2vw;
+    margin-bottom: 0vh;
+    margin-top: 1vh;
+    padding-bottom: 0vh;
+    padding-top: 0vh;
+    font-size: 5.5vw;
+}
+
+.ios#add {
+    font-size: 6vw;
+    margin-top: -1vh;
+    margin-left: 18vw;
+}
+
+.ios .bottomLeftButton {
+    margin-bottom: -1.35vh;
+    color: var(--ion-color-danger);
+}
+
+.ios .bottomRightButton {
+    margin-bottom: -1.35vh;
+    color: var(--ion-color-tertiary);
+}
+// END IOS STYLE SHEET
+
+
+// BEGIN MD STYLE SHEET
+.md.scriptStackedHeaderTitle {
+    margin-left: 14vw;
+}
+
+
+.md .inputLabelFloating {
+    font-size: 5vw;
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+}
+
+.md .inputItemStack {
+    width: 102vw;
+    margin-left: 0vw;
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+    padding-bottom: 0vh;
+    padding-top: 0vh;
+    font-size: 5.5vw;
+}
+
+
+.md#add {
+    font-size: 6vw;
+    margin-top: 2.5vh;
+    margin-left: 18vw;
+}
+
+.md .bottomLeftButton {
+    margin-bottom: 0vh;
+    color: var(--ion-color-danger);
+}
+
+.md .bottomRightButton {
+    margin-bottom: 0vh;
+    color: var(--ion-color-tertiary);
+}
+
+// END MD STYLE SHEET
+
+
+// BEGIN GENERAL STYLE SHEET
+
+
+.inputFieldStack {
+    --placeholder-color: var(--ion-color-tertiary);
+    --placeholder-opacity: 30%;
+    --color: var(--ion-color-secondary);
+}
+
+.warningHolder {
+    margin-left: 0vw;
+    margin-top: -2.25vh;
+    margin-bottom: -1vh;
+    margin-right: 1vw;
+    padding: 0;
+    --background: transparent;
+}
+
+
+.regular {
+    font-size: 4vw;
+    color: var(--ion-color-tertiary);
+    
+}
+
+.danger {
+    font-size: 4vw;
+    color: var(--ion-color-danger)
+}
+
+#thumbnail {
+    position: relative;
+    width: 60vw;
+    height: 50vw;
+    bottom: -2vh;
+    margin-left: 20vw;
+    // height: 45vw;
+    border: 1px solid var(--ion-color-primary);
+}
+
+.largeButton {
+    bottom: 8.15vh;
+}
+
+
+
+#textHolder {
+    text-align: center;
+    font-size: 5vw;
+    color: var(--ion-color-tertiary);
+    margin-top: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+// END GENERAL STYLE SHEET
+
+
+
+
+
+

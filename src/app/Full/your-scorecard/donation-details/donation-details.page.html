@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref='/full/your-scorecard'></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-text class='titleHolder'>
+        <h1 class='title'>
+          Donations
+        </h1>
+      </ion-text>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col>
+        <ion-list class="ion-no-padding" *ngIf="this.donations.length > 0" id="list">
+          <ion-card *ngFor="let donor of this.donations" class="card">
+            <ion-card-content class="ion-no-padding">
+              <ion-item lines="none" class="firstInputItem">
+                <ion-label position="stacked" class="inputLabel">
+                  Fan's Name
+                </ion-label>
+                <ion-input readonly class="inputField">
+                  {{ donor.donorFirstName + ' ' + donor.donorLastName}}
+                </ion-input>
+              </ion-item>
+              <ion-item lines="none" class="inputItem">
+                <ion-label position="stacked" class="inputLabel">
+                  Donation Amount
+                </ion-label>
+                <ion-input readonly class="inputFieldMoney">
+                  ${{ donor.donorAmount | number:'1.0':'en-US' }}
+                </ion-input>
+              </ion-item>
+
+              <ion-item lines="none" class="lastInputItem">
+                <ion-label position="stacked" class="inputLabel">
+                  Donation Date
+                </ion-label>
+                <ion-input readonly class="inputField">
+                  {{ donor.donorDate }}
+                </ion-input>
+              </ion-item>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-list>
+
+        <ion-item lines="none" id="noFansHolder">
+          <ion-text *ngIf="this.donations.length === 0" id="noFans">
+            You have not generated any donations yet. Please add more fans!
+          </ion-text>
+        </ion-item>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

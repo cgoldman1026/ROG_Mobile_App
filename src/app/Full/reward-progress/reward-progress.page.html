@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button class="fullHamburger"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-text>
+        <h1 class="fullTitle">
+          Reward Progress
+        </h1>
+      </ion-text>
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button slot="icon-only" class="fullHelp" (click)="presentModal()">
+        <ion-icon name="help-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-text id='yourReward'>
+          Your Reward:
+        </ion-text>
+        <ion-text id='theReward'>
+          Skip one day of practice.Skip one day of practice.Skip one day of practice.
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-thumbnail id='thumbnail'>
+        </ion-thumbnail>
+        <ion-thumbnail class='progressBar' [style.height.vh]='numberSupporters * (60/numberRequiredSupporters)'
+          *ngIf="numberSupporters <= numberRequiredSupporters">
+        </ion-thumbnail>
+        <ion-thumbnail class='progressBar' [style.height.vh]='60' *ngIf="numberSupporters > numberRequiredSupporters">
+        </ion-thumbnail>
+        <ion-text class='numSupporters'
+          [style.bottom.vh]='12 + (((60/numberRequiredSupporters) + .075) * numberSupporters)'
+          *ngIf="numberSupporters > 0 && numberSupporters < numberRequiredSupporters">
+          {{ numberSupporters }} <span *ngIf="numberSupporters !== 1">Supporters</span><span
+            *ngIf="numberSupporters === 1">Supporter</span>
+        </ion-text>
+        <ion-text 
+        [ngClass]="{
+          'fifteen': this.platformHeight >= 650,
+          'fifteenSmall': this.platformHeight < 650
+        }" *ngIf="numberSupporters <= numberRequiredSupporters"
+          [ngStyle]="{'color': numberSupporters < numberRequiredSupporters ? 'var(--ion-color-tertiary)' : 'var(--ion-color-secondary)'}">
+          {{ numberRequiredSupporters }} Supporters
+        </ion-text>
+        <ion-text id='fifteen' *ngIf="numberSupporters > numberRequiredSupporters"
+          [ngStyle]="{'color': numberSupporters < numberRequiredSupporters ? 'var(--ion-color-tertiary)' : 'var(--ion-color-secondary)'}">
+          {{ numberSupporters }} Supporters
+        </ion-text>
+        <ion-text *ngIf="numberSupporters >= numberRequiredSupporters" id='didIt'>
+          You did it!
+        </ion-text>
+        <ion-text id='zero'
+          [ngStyle]="{'color': numberSupporters === 0 ? 'var(--ion-color-secondary)' : 'var(--ion-color-tertiary)'}">
+          0 Supporters
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button routerLink='/full/share-campaign/tabs/add-fans' class='largeButton'>
+    ADD MORE FANS
+  </ion-button>
+
+</ion-content>

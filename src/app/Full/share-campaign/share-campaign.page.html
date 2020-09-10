@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button class="fullHamburger"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-text>
+        <h1 class="fullTitle">
+          Share Campaign
+        </h1>
+      </ion-text>
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button slot="icon-only" class="fullHelp" (click)="presentModal()">
+        <ion-icon name="help-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content>
+  <ion-tabs lines="none">
+    <ion-tab-bar slot="top" lines="none" id='bar'>
+      <ion-tab-button tab="add-fans" selected="true" (click)="onAddFans()">
+        <ion-label>Add Fans</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="social-sharing" (click)="onSocialSharing()">
+        <ion-label>Social Sharing</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>

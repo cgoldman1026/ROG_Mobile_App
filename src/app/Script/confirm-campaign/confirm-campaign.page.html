@@ -1,0 +1,46 @@
+<ion-header class="scriptHeader">
+  <ion-title class="scriptHeaderTitle">
+    CONFIRM CAMPAIGN
+  </ion-title>
+</ion-header>
+
+
+<ion-content class="ion-no-padding" scrollY='false'> 
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col class="ion-text-center" id="organizationNameCol">
+        <ion-text color="primary" id="organizationNameText">
+          {{ this.organizationName }}
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center" id="organizationCategoryCol">
+        <ion-text color="primary" id="organizationCategoryText">
+          {{ this.organizationCategory }}
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img class="ion-text-center" id="organizationLogo" [src]="this.organizationImage"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button class="smallButton" routerDirection="forward" routerLink="/script/create-your-account">
+    CONFIRM
+  </ion-button>
+
+  <ion-button routerLink="/script/campaign-pin-number" fill="clear" routerDirection="back" id="wrongCampaign">
+    Not Your Campaign?
+  </ion-button>
+
+  <ion-button class="bottomMiddleButton" fill="clear" (click)="presentModal()">
+    HELP
+  </ion-button>
+
+
+
+
+</ion-content>

@@ -1,3 +1,70 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" contentId="main" type="overlay" id="menu" #menu>
+    <ion-header class="ion-no-border">
+      <ion-toolbar>
+        <ion-title id='title'>
+          Menu
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content id='content'>
+      <ion-list>
+        <ion-menu-toggle class='toggle'>
+          <ion-item #item lines="none" routerLink="/full/your-profile" routerDirection="root" detail='false'>
+            <ion-icon name="person-outline" slot="start"
+              [color]="this.getUrl().includes('your-profile') ? 'secondary' : 'primary'"></ion-icon>
+            <ion-label [color]="this.getUrl().includes('your-profile') ? 'secondary' : 'primary'">Your Profile
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/full/share-campaign" detail='false' routerDirection="root">
+            <ion-icon name="share-outline" slot="start"
+              [color]="this.getUrl().includes('share-campaign') ? 'secondary' : 'primary'"></ion-icon>
+            <ion-label [color]="this.getUrl().includes('share-campaign') ? 'secondary' : 'primary'">Share Campaign
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/full/your-fans" detail='false' routerDirection="root">
+            <ion-icon name="people-outline" slot="start"
+              [color]="this.getUrl().includes('your-fans') ? 'secondary' : 'primary'"></ion-icon>
+            <ion-label [color]="this.getUrl().includes('your-fans') ? 'secondary' : 'primary'">Your Fans</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/full/your-scorecard" detail='false' routerDirection="root">
+            <ion-icon name="cash-outline" slot="start"
+              [color]="this.getUrl().includes('your-scorecard') ? 'secondary' : 'primary'"></ion-icon>
+            <ion-label [color]="this.getUrl().includes('your-scorecard') ? 'secondary' : 'primary'">Your Scorecard
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/full/reward-progress" detail='false' routerDirection="root">
+            <ion-icon name="star-outline" slot="start"
+              [color]="this.getUrl().includes('reward-progress') ? 'secondary' : 'primary'"></ion-icon>
+            <ion-label [color]="this.getUrl().includes('reward-progress') ? 'secondary' : 'primary'">Reward Progress
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/full/faq" detail='false' routerDirection="root">
+            <ion-icon name="help-outline" slot="start"
+              [color]="this.getUrl().includes('faq') ? 'secondary' : 'primary'"></ion-icon>
+            <ion-label [color]="this.getUrl().includes('faq') ? 'secondary' : 'primary'">FAQ</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" (click)="presentAlertLogout($event)" button detail='false'>
+            <ion-icon name="exit" slot="start"></ion-icon>
+            <ion-label>Logout</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

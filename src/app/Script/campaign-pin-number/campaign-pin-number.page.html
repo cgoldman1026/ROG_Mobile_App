@@ -1,0 +1,33 @@
+<ion-header class="logoHeader">
+  <img src="../../assets/white_logo.png" alt="Unable to load image. Please try again later.">
+</ion-header>
+
+<ion-content>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <ion-grid>
+      <ion-row>
+        <ion-col id="headerColumn">
+          <ion-text id="headerText">
+            Campaign PIN Number </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-item class="ion-text-center" lines="none" id="pinInput">
+      <ion-input placeholder="123456789" type="tel" ngModel name="pin" required #pinControl="ngModel" minlength="9"
+        maxlength="9"></ion-input>
+    </ion-item>
+  </form>
+
+  <ion-button (click)="onSubmit(f)" class="largeButton" [disabled]="!f.valid" routerDirection="forward">
+    SUBMIT
+  </ion-button>
+
+  <ion-button routerLink="/full/login" id="no_account" fill="clear" color="secondary" routerDirection="back">
+    ALREADY HAVE AN ACCOUNT?
+  </ion-button>
+
+  <ion-button class="bottomMiddleButton" fill="clear" (click)="presentModal()">
+    HELP
+  </ion-button>
+
+</ion-content>

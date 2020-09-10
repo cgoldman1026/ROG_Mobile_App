@@ -1,0 +1,187 @@
+<ion-header class="scriptHeader">
+  <ion-title class="scriptStackedSubHeaderTitle">
+    Step 1
+  </ion-title>
+  <ion-title class="scriptStackedHeaderTitle">
+    PICK YOUR REWARD
+  </ion-title>
+</ion-header>
+
+
+
+<ion-content class="ion-no-padding">
+  <ion-grid *ngIf="this.rewards.length !== 0">
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <p class="headlineText">
+            Reward is earned when you add 15 or more recommended contacts.
+          </p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <!-- <ion-row>
+      <ion-col>
+        <p class="selectText">
+          Select your reward below.
+        </p>
+      </ion-col>
+    </ion-row> -->
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-radio-group>
+            <ion-list-header>
+              <p class="selectText">
+                Select your reward below.
+              </p>
+            </ion-list-header>
+            <ion-item *ngFor="let reward of this.rewards" lines="none">
+              <ion-label class="rewardLabel">
+                {{ reward }}
+              </ion-label>
+              <!-- <ion-icon slot="start" name="square-outline"></ion-icon> -->
+              <ion-radio class="radio" slot="start"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid *ngIf="this.rewards.length === 0">
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <p class="headlineText">
+            Your campaign organizer has not designated any participation rewards at this time. Please check back later!
+          </p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button (click)="onNext()" class="largeButton" routerDirection="forward" routerLink="/script/your-profile">
+    NEXT
+  </ion-button>
+
+  <ion-button (click)="onClick()" class="bottomLeftButton" fill="clear" color="danger" routerLink="/script/tutorial" routerDirection="back">
+    BACK
+  </ion-button>
+
+  <ion-button class="bottomRightButton" fill="clear" color="tertiary" (click)="presentModal()">
+    HELP
+  </ion-button>
+
+  <!-- <ion-grid *ngIf="this.rewards.length !== 0">
+    <ion-row>
+      <ion-col>
+        <ion-text class="ion-text-center" id="topText">
+          <p>
+            Reward is earned when you add 15 or more recommended contacts.
+          </p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-text class="ion-text-center" id="subtopText">
+          <p>
+            Select your reward below.
+          </p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list *ngIf="this.rewards.length !== 1">
+          <ion-radio-group #radioGroup>
+            <ion-list-header>
+              <ion-label></ion-label>
+            </ion-list-header>
+            <ion-item lines="none" *ngFor="let reward of this.rewards">
+              <ion-label>
+                <p class="reward">
+                  {{ reward }}
+                </p>
+              </ion-label>
+              <ion-radio slot="start" color="danger"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+
+        <ion-list *ngIf="this.rewards.length === 1">
+
+          <ion-item lines="none">
+
+            <p class="reward">
+              <ion-icon class="checkmark" name="checkmark-outline"></ion-icon>
+              {{ this.rewards }}
+            </p>
+
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <p id="warning">
+            <span style="color: var(--ion-color-danger)">Warning: </span>reward choices are final.
+          </p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-grid>
+    <ion-row *ngIf="this.rewards.length === 0">
+      <ion-col>
+        <ion-text class="ion-text-center" id="topText">
+          <p>
+            Your campaign organizer has not designated any participation rewards at this time. Please check back later.
+          </p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+
+  <!-- 
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="onNext()" class="largeButton" routerDirection="forward"
+          id="next" routerLink="/your-profile">
+          NEXT
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="bottomLeftButton" size="2">
+        <ion-button (click)="onClick()" id="back" fill="clear" color="danger" routerLink="/tutorial" routerDirection="back">
+          BACK
+        </ion-button>
+      </ion-col>
+      <ion-col class="bottomRightButton" offset="8" size="2">
+        <ion-button id="help" fill="clear" color="tertiary" (click)="presentModal()" >
+          HELP
+        </ion-button>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid> 
+
+  <ion-list>
+    <ion-radio-group>
+      <ion-item *ngFor="let reward of this.rewards" lines="none">
+        <ion-label class="reward"> {{ reward }} </ion-label>
+        <ion-radio></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+ -->
+
+</ion-content>

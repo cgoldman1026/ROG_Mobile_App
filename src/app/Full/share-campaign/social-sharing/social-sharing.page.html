@@ -1,0 +1,62 @@
+<ion-content style='--background: transparent;'>
+
+  <ion-grid class='ion-no-padding'>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-card class="firstSocialCard" (click)='onFacebookClick()'>
+            <ion-card-header>
+              <ion-card-title class="ion-text-center">
+                <ion-img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEU8Wpn///8uUpYyVJcmS5IxUpWnsczd4eueqsfh5e36+/ybp8Y5WJg2VpceR5ApTZNqfq3X3Oe0vdOLmb3v8fZlequVosPJz9+FlLry8/dNZ6BZcKV3ibOqtc5wg7BEYZ66wtfQ1uRdc6fAyNoVQ44AOoovu9IUAAAER0lEQVR4nO3d63aiMBSGYQgBPCTB86Fq1bZz/7c4+qMdtOCOwBY2871/u6R5FnhMjEHY94K2B8AehPKDUH4Qyu8/FKbjZaCkFkwGQ0I43bnYBkZqgY3dcvhIuHImkJ51Sblwn7U9vEbS8zLhqh/AC/FQLJy6tkfWWG5YKNzJvw9+Z9+LhGl/TuHlJC4KhOO47WE1mDoUCJe27WE1mN0XCNseVKOZY4FQ9eeB5iKMIJQehPKDUH4Qyg9C+UEoPwjlB6H8IJSfAKGxsVLZTypTsYrjyBob+Iyz20JjldZv76vktD5Pr53P68/TaZaMV5v9cne8/DXLIuIY3RWaWMebWToKHzRapOvBY2JnhVYfB+kj3E9D/fBAHRVGbjP14l1KBQojt9r6+iQKjds/4RMoVEfv61Ok0Lh5kaI/QqM/nwXKEpr41xqYfglNsCgi9EdozVOPoQKFWZUzKEnonnyWECfMDkXD75HQTioCpQiNrvQoI0iYzaoChQjNW2WgEKFe91xod9WBMoTZ86+3hQltDaAIYTzou9BVeM8kSmhrPFXIENa7SCUItd8nv3KFRtUCCvjM+4l3FcP1LBmMbxvMOz9v4Xk33CYfWmdKxfd1f+5J+bwmHW1cxVF1QKg9ng1TRZyp8jogdB7AGl+k64DQ0EJbY0DtC80HCVypOsdvXZj7TktZj5/wiNoXRuRk02etL0N2QDimhJvKj6PX2hfST/hvtYbTAWFSpMqXCRcqSrit9UAjQUi8d6CCkD9SSLzDpYKQPwghpIKQPwghpIKQPwghpIKQPwghpIKQv74Iza+Jze80Kfwqve01ateuFwnNZFDW+EwIF6vS217bEMQXCWsuKHnUiZiYki8cd2Men1G47/1VSu1iKV9IzYCLF5LzNuKF5OsB8cI1NQUuXnig9loVL1z1XvjekdelfEJyGYN4IbmMQbpwS25bLV2YkuulpAvpFWHShQm5bFG6kFjG3gPhhNxcXbqQ/tfShfRvHAgXLujPUoULz/TyYeHCU++FA/qXOIQLPZaACxd+0CMVLvQYqGzhyGPiTbbQZ4H0i4TRfFgatXfSqPym1LzTC4VBpMv6ok5v+qf0tj7f+MIsN38QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkhVKGxo7H6xC48FQnprogbjFuZ+I/Of0GPHkObiFqpZgXBI703UXNxCty0QhssXXqbMwij3Q6454StPIq/Q6NymFDlhmNS7Mp6JV+hOuSPlheH8ZUROoXE3m27cCMODe9F9kVEY6dPNkW6F4fDdKWsCw52HsMJRA2OV299tDBPcH3px2B8j9rIkHD0qnLoqhz1uZtt70C9h74JQfhDKD0L5QSi/v0LujVjzxgQBAAAAAElFTkSuQmCC">
+                </ion-img>
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content class="ion-text-center">
+              <h1 class="shareText">
+                Share on Facebook
+              </h1>
+            </ion-card-content>
+          </ion-card>
+          <ion-card class="socialCard" (click)='onTwitterClick()'>
+            <ion-card-header>
+              <ion-card-title class="ion-text-center">
+                <ion-img
+                  src="https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-articleLarge-v4.jpg?quality=75&auto=webp&disable=upscale">
+                </ion-img>
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content class="ion-text-center">
+              <h1 class="shareText">
+                Share on Twitter
+              </h1>
+            </ion-card-content>
+          </ion-card>
+          <ion-card class="socialCard" [style.margin-bottom.vh]='2' (click)='onInstagramClick()'>
+            <ion-card-header>
+              <ion-card-title class="ion-text-center">
+                <ion-img
+                  src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png">
+                </ion-img>
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content class="ion-text-center">
+              <h1 class="shareText">
+                Share on Instagram
+              </h1>
+            </ion-card-content>
+          </ion-card>
+
+
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-button class='largeButton' routerLink='/full/share-campaign/tabs/add-fans'>
+    ADD MORE FANS
+  </ion-button>
+
+</ion-content>

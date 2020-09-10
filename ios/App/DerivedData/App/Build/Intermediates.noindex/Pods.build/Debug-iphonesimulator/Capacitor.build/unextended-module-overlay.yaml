@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/DerivedData/App/Build/Products/Debug-iphonesimulator/Capacitor/Capacitor.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/DerivedData/App/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/unextended-module.modulemap",
+    }]
+  }]
+}

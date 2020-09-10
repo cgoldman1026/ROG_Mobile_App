@@ -1,0 +1,166 @@
+<ion-header class="scriptHeader">
+  <ion-title class="scriptStackedSubHeaderTitle">
+    Step 2
+  </ion-title>
+  <ion-title class="scriptStackedHeaderTitle">
+    YOUR PROFILE
+  </ion-title>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form">
+    <ion-grid class="ion-no-padding">
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItemStack" lines="none">
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight <= 740">
+              * Your First Name:
+            </ion-label>
+            <ion-label *ngIf="this.platformHeight > 740" color="primary" class="inputLabelFloating" position='floating'>
+              * Your First Name
+            </ion-label>
+            <ion-input class="inputFieldStack" autocapitalize="words" autocomplete="on" formControlName="firstName"
+              type="text" maxlength="25" placeholder='John' enterkeyhint="next">
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItemStack" lines="none">
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight <= 740">
+              * Your Last Name:
+            </ion-label>
+            <ion-label *ngIf="this.platformHeight > 740" color="primary" class="inputLabelFloating" position='floating'>
+              * Your Last Name
+            </ion-label>
+            <ion-input class="inputFieldStack" autocapitalize="words" autocomplete="on" formControlName="lastName"
+              type="text" maxlength="30" placeholder='Smith' enterkeyhint="next">
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItemStack" lines="none">
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight <= 740">
+              * Your Mobile #:
+            </ion-label>
+            <ion-label *ngIf="this.platformHeight > 740" color="primary" class="inputLabelFloating" position='floating'>
+              * Your Mobile Number
+            </ion-label>
+            <ion-input class="inputFieldStack" autocomplete="tel" formControlName="mobileNumber" type="tel"
+              placeholder='(123) 456-7890' enterkeyhint="next" appPhoneMask minlength="14" (ionFocus)="toggleMobileNumberFocus()"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItemStack" lines="none">
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight <= 740">
+              * Your Email:
+            </ion-label>
+            <ion-label *ngIf="this.platformHeight > 740" color="primary" class="inputLabelFloating" position='floating'>
+              * Your Email Address
+            </ion-label>
+            <ion-input class="inputFieldStack" autocomplete="email" formControlName="emailAddress" type="email"
+              placeholder='johnsmith@email.com' email enterkeyhint="next" (ionFocus)="toggleEmailFocus()"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+
+
+
+
+
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+          <ion-item lines="none" class="warningHolder">
+            <p [ngClass]="{
+              'regular': !form.valid || form.valid,
+              'danger':  !form.valid && (!form.get('firstName').valid && form.get('firstName').touched || !form.get('lastName').valid && form.get('lastName').touched || !form.get('emailAddress').valid && form.get('emailAddress').touched || !form.get('mobileNumber').valid && form.get('mobileNumber').touched)
+             }">
+              * Required
+            </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+
+          <ion-item class="warningHolder" lines="none"
+            *ngIf="form.get('emailAddress').touched && form.get('emailAddress').invalid && !this.emailAddressFocused">
+            <p class="danger">
+              Please enter a valid email address.
+            </p>
+          </ion-item>
+
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+
+          <ion-item class="warningHolder" lines="none"
+            *ngIf="form.get('mobileNumber').touched && form.get('mobileNumber').invalid && !this.mobileNumberFocused">
+            <p class="danger">
+              Please enter a valid mobile number.
+            </p>
+          </ion-item>
+
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row>
+        <ion-col>
+          <ion-thumbnail id='thumbnail' (click)="selectImage()">
+            <div id='textHolder'>
+              <ion-text>
+                We don't have an <span style='color: var(--ion-color-secondary)'>action shot or selfie</span> from you
+                yet. Click anywhere in this box to upload an image!
+              </ion-text>
+            </div>
+            <ion-button fill='clear' color='danger' id='add'>
+              <ion-icon name="add-circle"></ion-icon>
+            </ion-button>
+          </ion-thumbnail>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </form>
+
+  <ion-button class="largeButton" (click)="onNext(form)" strong="true" expand="full" color="secondary"
+    [disabled]="!form.valid" routerDirection="forward">
+    NEXT
+  </ion-button>
+
+
+  <ion-button class="bottomLeftButton" fill="clear" color="danger" routerLink="/script/pick-your-reward"
+    routerDirection="back">
+    BACK
+  </ion-button>
+
+  <ion-button class="bottomRightButton" fill="clear" color="tertiary" (click)="presentModal()">
+    HELP
+  </ion-button>
+
+
+</ion-content>

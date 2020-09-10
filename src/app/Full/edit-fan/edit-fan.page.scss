@@ -1,0 +1,175 @@
+// BEGIN IOS STYLE SHEET HERE
+
+.ios #title {
+    font-size: 6vw;
+}
+
+.ios .firstInputItem {
+    width: 98vw;
+    margin-bottom: -.25vh;
+    margin-top: 2vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+.ios .inputItem {
+    width: 98vw;
+    margin-bottom: -.25vh;
+    margin-top: -0.25vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+.ios .inputLabelFloating {
+    font-size: 5vw;
+    margin-bottom: -1vh;
+    margin-top: 0.25vh;
+}
+
+.ios .inputField {
+    --placeholder-color: var(--ion-color-tertiary);
+    --placeholder-opacity: 30%;
+    --color: var(--ion-color-secondary);
+    margin-top: 0vh;
+}
+
+.ios .lastInputItem {
+    width: 98vw;
+    margin-bottom: 0.5vh;
+    margin-top: -0.25vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+
+.ios .warningHolder {
+    margin-left: 0vw;
+    margin-top: -1.5vh;
+    margin-bottom: -1.5vh;
+    margin-right: 1vw;
+    padding: 0;
+    --background: transparent;
+}
+
+.ios .largeButton {
+    bottom: 6vh;
+}
+
+
+.ios .bottomMiddleButton {
+    margin-bottom: -2.5vh;
+    width: 40vw;
+    margin-left: 30vw;
+}
+
+
+// END IOS STYLE SHEET HERE
+
+
+
+// BEGIN MD STYLE SHEET HERE
+
+.md #title {
+    font-size: 6vw;
+    margin-left: 12.5vw;
+    margin-top: 1vh;
+}
+
+.md .firstInputItem {
+    width: 100vw;
+    margin-bottom: -.25vh;
+    margin-top: 1.25vh;
+    margin-left: 1vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+.md .inputItem {
+    width: 100vw;
+    margin-bottom: -.25vh;
+    margin-top: -0.25vh;
+    margin-left: 1vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+.md .lastInputItem {
+    width: 100vw;
+    margin-bottom: 1vh;
+    margin-top: -0.25vh;
+    margin-left: 1vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+.md .inputLabelFloating {
+    font-size: 5vw;
+    margin-bottom: 0.75vh;
+    margin-top: 0.25vh;
+}
+
+.md .inputField {
+    margin-top: 0.25vh;
+    --placeholder-color: var(--ion-color-tertiary);
+    --placeholder-opacity: 30%;
+    --color: var(--ion-color-secondary);
+}
+
+.md #dear {
+    color: var(--ion-color-secondary);
+    margin-left: 1vw;
+    margin-bottom: -0.25vh;
+    margin-right: -0.25vw;
+    margin-top: -0.25vh;
+}
+
+
+.md .warningHolder {
+    margin-left: 0vw;
+    margin-top: -1.65vh;
+    margin-bottom: -1.65vh;
+    margin-right: 1vw;
+    padding: 0;
+    --background: transparent;
+}
+
+.md .largeButton {
+    bottom: 7vh;
+}
+
+.md .bottomMiddleButton {
+    bottom: 0.75vh;
+    width: 40vw;
+    margin-left: 29vw;
+}
+
+// END MD STYLE SHEET HERE
+
+
+
+
+
+// BEGIN GENERAL STYLE SHEET HERE
+
+
+ion-select {
+    margin-left: 1vw;
+    min-width: 58%;
+    padding-left: 0;
+}
+
+
+.regular {
+    font-size: 3.75vw;
+    color: var(--ion-color-primary);
+}
+
+.danger {
+    font-size: 3.75vw;
+    color: var(--ion-color-danger)
+}
+
+// END GENERAL STYLE SHEET HERE

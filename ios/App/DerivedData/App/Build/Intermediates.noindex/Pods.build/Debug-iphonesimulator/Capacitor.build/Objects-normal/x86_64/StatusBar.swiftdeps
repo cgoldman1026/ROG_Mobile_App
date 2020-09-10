@@ -1,0 +1,507 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CAPStatusBarPlugin"
+provides-nominal:
+- "9Capacitor18CAPStatusBarPluginC"
+provides-member:
+- ["9Capacitor18CAPStatusBarPluginC", ""]
+provides-dynamic-lookup:
+- "getInfo"
+- "hide"
+- "load"
+- "setAnimation"
+- "setBackgroundColor"
+- "setOverlaysWebView"
+- "setStyle"
+- "show"
+depends-top-level:
+- !private "=="
+- !private "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "CAPBridge"
+- "CAPPlugin"
+- "CAPPluginCall"
+- "CAPStatusBarPlugin"
+- "CastingPrecedence"
+- !private "DispatchQueue"
+- !private "NotificationCenter"
+- !private "String"
+- !private "StringLiteralType"
+- !private "UIUserInterfaceStyle"
+depends-member:
+- !private ["9Capacitor9CAPBridgeC", "getStatusBarStyle"]
+- !private ["9Capacitor9CAPBridgeC", "getStatusBarVisible"]
+- !private ["9Capacitor9CAPBridgeC", "getUserInterfaceStyle"]
+- !private ["9Capacitor9CAPBridgeC", "setStatusBarAnimation"]
+- !private ["9Capacitor9CAPBridgeC", "setStatusBarStyle"]
+- !private ["9Capacitor9CAPBridgeC", "setStatusBarVisible"]
+- !private ["9Capacitor9CAPBridgeC", "statusBarTappedNotification"]
+- !private ["9Capacitor9CAPBridgeC", "triggerJSEvent"]
+- !private ["So9CAPPluginC", "CAPBridge"]
+- ["So9CAPPluginC", "CAPPluginCall"]
+- !private ["So9CAPPluginC", "DispatchQueue"]
+- !private ["So9CAPPluginC", "NotificationCenter"]
+- !private ["So9CAPPluginC", "String"]
+- !private ["So9CAPPluginC", "UIUserInterfaceStyle"]
+- ["So9CAPPluginC", ""]
+- !private ["So9CAPPluginC", "bridge"]
+- ["So9CAPPluginC", "getInfo"]
+- ["So9CAPPluginC", "hide"]
+- ["So9CAPPluginC", "init"]
+- ["So9CAPPluginC", "load"]
+- ["So9CAPPluginC", "setAnimation"]
+- ["So9CAPPluginC", "setBackgroundColor"]
+- ["So9CAPPluginC", "setOverlaysWebView"]
+- ["So9CAPPluginC", "setStyle"]
+- ["So9CAPPluginC", "show"]
+- !private ["So13CAPPluginCallC", "getString"]
+- !private ["So13CAPPluginCallC", "options"]
+- !private ["So13CAPPluginCallC", "success"]
+- !private ["So13CAPPluginCallC", "unimplemented"]
+- !private ["9Capacitor18CAPStatusBarPluginC", "CAPBridge"]
+- ["9Capacitor18CAPStatusBarPluginC", "CAPPluginCall"]
+- !private ["9Capacitor18CAPStatusBarPluginC", "DispatchQueue"]
+- !private ["9Capacitor18CAPStatusBarPluginC", "NotificationCenter"]
+- !private ["9Capacitor18CAPStatusBarPluginC", "String"]
+- !private ["9Capacitor18CAPStatusBarPluginC", "UIUserInterfaceStyle"]
+- !private ["9Capacitor18CAPStatusBarPluginC", "bridge"]
+- ["9Capacitor18CAPStatusBarPluginC", "deinit"]
+- ["9Capacitor18CAPStatusBarPluginC", "getInfo"]
+- ["9Capacitor18CAPStatusBarPluginC", "hide"]
+- ["9Capacitor18CAPStatusBarPluginC", "init"]
+- ["9Capacitor18CAPStatusBarPluginC", "load"]
+- ["9Capacitor18CAPStatusBarPluginC", "setAnimation"]
+- ["9Capacitor18CAPStatusBarPluginC", "setBackgroundColor"]
+- ["9Capacitor18CAPStatusBarPluginC", "setOverlaysWebView"]
+- ["9Capacitor18CAPStatusBarPluginC", "setStyle"]
+- ["9Capacitor18CAPStatusBarPluginC", "show"]
+- !private ["s7CVarArgP", "CAPBridge"]
+- !private ["s7CVarArgP", "DispatchQueue"]
+- !private ["s7CVarArgP", "NotificationCenter"]
+- !private ["s7CVarArgP", "UIUserInterfaceStyle"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "addObserver"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "bridge"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "getStatusBarStyle"]
+- !private ["s7CVarArgP", "getStatusBarVisible"]
+- !private ["s7CVarArgP", "getString"]
+- !private ["s7CVarArgP", "getUserInterfaceStyle"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "options"]
+- !private ["s7CVarArgP", "setAnimation"]
+- !private ["s7CVarArgP", "setStatusBarAnimation"]
+- !private ["s7CVarArgP", "setStatusBarStyle"]
+- !private ["s7CVarArgP", "setStatusBarVisible"]
+- !private ["s7CVarArgP", "statusBarTappedNotification"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "success"]
+- !private ["s7CVarArgP", "triggerJSEvent"]
+- !private ["s7CVarArgP", "unimplemented"]
+- !private ["Sl", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "CAPBridge"]
+- !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
+- !private ["s28CustomDebugStringConvertibleP", "NotificationCenter"]
+- !private ["s28CustomDebugStringConvertibleP", "UIUserInterfaceStyle"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "bridge"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "getStatusBarStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "getStatusBarVisible"]
+- !private ["s28CustomDebugStringConvertibleP", "getString"]
+- !private ["s28CustomDebugStringConvertibleP", "getUserInterfaceStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "none"]
+- !private ["s28CustomDebugStringConvertibleP", "options"]
+- !private ["s28CustomDebugStringConvertibleP", "setAnimation"]
+- !private ["s28CustomDebugStringConvertibleP", "setStatusBarAnimation"]
+- !private ["s28CustomDebugStringConvertibleP", "setStatusBarStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "setStatusBarVisible"]
+- !private ["s28CustomDebugStringConvertibleP", "statusBarTappedNotification"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "success"]
+- !private ["s28CustomDebugStringConvertibleP", "triggerJSEvent"]
+- !private ["s28CustomDebugStringConvertibleP", "unimplemented"]
+- !private ["s17CustomReflectableP", "getStatusBarStyle"]
+- !private ["s17CustomReflectableP", "getStatusBarVisible"]
+- !private ["s17CustomReflectableP", "getUserInterfaceStyle"]
+- !private ["s17CustomReflectableP", "name"]
+- !private ["s17CustomReflectableP", "none"]
+- !private ["s17CustomReflectableP", "setStatusBarAnimation"]
+- !private ["s17CustomReflectableP", "setStatusBarStyle"]
+- !private ["s17CustomReflectableP", "setStatusBarVisible"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "triggerJSEvent"]
+- !private ["s23CustomStringConvertibleP", "CAPBridge"]
+- !private ["s23CustomStringConvertibleP", "DispatchQueue"]
+- !private ["s23CustomStringConvertibleP", "NotificationCenter"]
+- !private ["s23CustomStringConvertibleP", "UIUserInterfaceStyle"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "addObserver"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "bridge"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "getStatusBarStyle"]
+- !private ["s23CustomStringConvertibleP", "getStatusBarVisible"]
+- !private ["s23CustomStringConvertibleP", "getString"]
+- !private ["s23CustomStringConvertibleP", "getUserInterfaceStyle"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "options"]
+- !private ["s23CustomStringConvertibleP", "setAnimation"]
+- !private ["s23CustomStringConvertibleP", "setStatusBarAnimation"]
+- !private ["s23CustomStringConvertibleP", "setStatusBarStyle"]
+- !private ["s23CustomStringConvertibleP", "setStatusBarVisible"]
+- !private ["s23CustomStringConvertibleP", "statusBarTappedNotification"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "success"]
+- !private ["s23CustomStringConvertibleP", "triggerJSEvent"]
+- !private ["s23CustomStringConvertibleP", "unimplemented"]
+- !private ["Se", "getStatusBarStyle"]
+- !private ["Se", "getStatusBarVisible"]
+- !private ["Se", "getUserInterfaceStyle"]
+- !private ["Se", "none"]
+- !private ["Se", "setStatusBarAnimation"]
+- !private ["Se", "setStatusBarStyle"]
+- !private ["Se", "setStatusBarVisible"]
+- !private ["Se", "subscript"]
+- !private ["Se", "triggerJSEvent"]
+- !private ["SD", "subscript"]
+- !private ["So18OS_dispatch_objectC", "async"]
+- !private ["So18OS_dispatch_objectC", "main"]
+- !private ["So17OS_dispatch_queueC", "async"]
+- !private ["So17OS_dispatch_queueC", "main"]
+- !private ["SE", "getStatusBarStyle"]
+- !private ["SE", "getStatusBarVisible"]
+- !private ["SE", "getUserInterfaceStyle"]
+- !private ["SE", "none"]
+- !private ["SE", "setStatusBarAnimation"]
+- !private ["SE", "setStatusBarStyle"]
+- !private ["SE", "setStatusBarVisible"]
+- !private ["SE", "subscript"]
+- !private ["SE", "triggerJSEvent"]
+- !private ["SQ", "CAPBridge"]
+- !private ["SQ", "DispatchQueue"]
+- !private ["SQ", "NotificationCenter"]
+- !private ["SQ", "UIUserInterfaceStyle"]
+- ["SQ", ""]
+- !private ["SQ", "addObserver"]
+- !private ["SQ", "async"]
+- !private ["SQ", "bridge"]
+- !private ["SQ", "dark"]
+- !private ["SQ", "darkContent"]
+- !private ["SQ", "default"]
+- !private ["SQ", "fade"]
+- !private ["SQ", "getStatusBarStyle"]
+- !private ["SQ", "getStatusBarVisible"]
+- !private ["SQ", "getString"]
+- !private ["SQ", "getUserInterfaceStyle"]
+- !private ["SQ", "lightContent"]
+- !private ["SQ", "main"]
+- !private ["SQ", "name"]
+- !private ["SQ", "none"]
+- !private ["SQ", "options"]
+- !private ["SQ", "setAnimation"]
+- !private ["SQ", "setStatusBarAnimation"]
+- !private ["SQ", "setStatusBarStyle"]
+- !private ["SQ", "setStatusBarVisible"]
+- !private ["SQ", "slide"]
+- !private ["SQ", "statusBarTappedNotification"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "success"]
+- !private ["SQ", "triggerJSEvent"]
+- !private ["SQ", "unimplemented"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s23ExpressibleByNilLiteralP", "getStatusBarStyle"]
+- !private ["s23ExpressibleByNilLiteralP", "getStatusBarVisible"]
+- !private ["s23ExpressibleByNilLiteralP", "getUserInterfaceStyle"]
+- !private ["s23ExpressibleByNilLiteralP", "none"]
+- !private ["s23ExpressibleByNilLiteralP", "setStatusBarAnimation"]
+- !private ["s23ExpressibleByNilLiteralP", "setStatusBarStyle"]
+- !private ["s23ExpressibleByNilLiteralP", "setStatusBarVisible"]
+- !private ["s23ExpressibleByNilLiteralP", "triggerJSEvent"]
+- !private ["SH", "CAPBridge"]
+- !private ["SH", "DispatchQueue"]
+- !private ["SH", "NotificationCenter"]
+- !private ["SH", "UIUserInterfaceStyle"]
+- ["SH", ""]
+- !private ["SH", "addObserver"]
+- !private ["SH", "async"]
+- !private ["SH", "bridge"]
+- !private ["SH", "dark"]
+- !private ["SH", "darkContent"]
+- !private ["SH", "default"]
+- !private ["SH", "fade"]
+- !private ["SH", "getStatusBarStyle"]
+- !private ["SH", "getStatusBarVisible"]
+- !private ["SH", "getString"]
+- !private ["SH", "getUserInterfaceStyle"]
+- !private ["SH", "lightContent"]
+- !private ["SH", "main"]
+- !private ["SH", "name"]
+- !private ["SH", "none"]
+- !private ["SH", "options"]
+- !private ["SH", "setAnimation"]
+- !private ["SH", "setStatusBarAnimation"]
+- !private ["SH", "setStatusBarStyle"]
+- !private ["SH", "setStatusBarVisible"]
+- !private ["SH", "slide"]
+- !private ["SH", "statusBarTappedNotification"]
+- !private ["SH", "subscript"]
+- !private ["SH", "success"]
+- !private ["SH", "triggerJSEvent"]
+- !private ["SH", "unimplemented"]
+- !private ["So8NSObjectC", "CAPBridge"]
+- ["So8NSObjectC", "CAPPluginCall"]
+- !private ["So8NSObjectC", "DispatchQueue"]
+- !private ["So8NSObjectC", "NotificationCenter"]
+- !private ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UIUserInterfaceStyle"]
+- !private ["So8NSObjectC", "addObserver"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "bridge"]
+- !private ["So8NSObjectC", "default"]
+- ["So8NSObjectC", "getInfo"]
+- !private ["So8NSObjectC", "getStatusBarStyle"]
+- !private ["So8NSObjectC", "getStatusBarVisible"]
+- !private ["So8NSObjectC", "getString"]
+- !private ["So8NSObjectC", "getUserInterfaceStyle"]
+- ["So8NSObjectC", "hide"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "load"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "options"]
+- ["So8NSObjectC", "setAnimation"]
+- ["So8NSObjectC", "setBackgroundColor"]
+- ["So8NSObjectC", "setOverlaysWebView"]
+- !private ["So8NSObjectC", "setStatusBarAnimation"]
+- !private ["So8NSObjectC", "setStatusBarStyle"]
+- !private ["So8NSObjectC", "setStatusBarVisible"]
+- ["So8NSObjectC", "setStyle"]
+- ["So8NSObjectC", "show"]
+- !private ["So8NSObjectC", "statusBarTappedNotification"]
+- !private ["So8NSObjectC", "success"]
+- !private ["So8NSObjectC", "triggerJSEvent"]
+- !private ["So8NSObjectC", "unimplemented"]
+- !private ["So8NSObjectP", "CAPBridge"]
+- !private ["So8NSObjectP", "DispatchQueue"]
+- !private ["So8NSObjectP", "NotificationCenter"]
+- !private ["So8NSObjectP", "UIUserInterfaceStyle"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addObserver"]
+- !private ["So8NSObjectP", "async"]
+- !private ["So8NSObjectP", "bridge"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "getStatusBarStyle"]
+- !private ["So8NSObjectP", "getStatusBarVisible"]
+- !private ["So8NSObjectP", "getString"]
+- !private ["So8NSObjectP", "getUserInterfaceStyle"]
+- !private ["So8NSObjectP", "main"]
+- !private ["So8NSObjectP", "options"]
+- !private ["So8NSObjectP", "setAnimation"]
+- !private ["So8NSObjectP", "setStatusBarAnimation"]
+- !private ["So8NSObjectP", "setStatusBarStyle"]
+- !private ["So8NSObjectP", "setStatusBarVisible"]
+- !private ["So8NSObjectP", "statusBarTappedNotification"]
+- !private ["So8NSObjectP", "success"]
+- !private ["So8NSObjectP", "triggerJSEvent"]
+- !private ["So8NSObjectP", "unimplemented"]
+- !private ["10Foundation12NotificationV", "name"]
+- !private ["So20NSNotificationCenterC", "addObserver"]
+- !private ["So20NSNotificationCenterC", "default"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "main"]
+- !private ["Sq", "getStatusBarStyle"]
+- !private ["Sq", "getStatusBarVisible"]
+- !private ["Sq", "getUserInterfaceStyle"]
+- !private ["Sq", "none"]
+- !private ["Sq", "setStatusBarAnimation"]
+- !private ["Sq", "setStatusBarStyle"]
+- !private ["Sq", "setStatusBarVisible"]
+- !private ["Sq", "triggerJSEvent"]
+- !private ["SY", "dark"]
+- !private ["SY", "darkContent"]
+- !private ["SY", "default"]
+- !private ["SY", "fade"]
+- !private ["SY", "lightContent"]
+- !private ["SY", "none"]
+- !private ["SY", "slide"]
+- !private ["10Foundation20ReferenceConvertibleP", "name"]
+- !private ["7Combine9SchedulerP", "async"]
+- !private ["7Combine9SchedulerP", "main"]
+- !private ["ST", "subscript"]
+- !private ["So20UIStatusBarAnimationV", "fade"]
+- !private ["So20UIStatusBarAnimationV", "none"]
+- !private ["So20UIStatusBarAnimationV", "slide"]
+- !private ["So16UIStatusBarStyleV", "darkContent"]
+- !private ["So16UIStatusBarStyleV", "default"]
+- !private ["So16UIStatusBarStyleV", "lightContent"]
+- !private ["So20UIUserInterfaceStyleV", "dark"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CAPBridge"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationCenter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIUserInterfaceStyle"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bridge"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getStatusBarStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getStatusBarVisible"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getUserInterfaceStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "options"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setAnimation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setStatusBarAnimation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setStatusBarStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setStatusBarVisible"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusBarTappedNotification"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "success"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "triggerJSEvent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unimplemented"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CAPBridge"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DispatchQueue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NotificationCenter"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIUserInterfaceStyle"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addObserver"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "async"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bridge"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "default"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "getStatusBarStyle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "getStatusBarVisible"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "getString"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "getUserInterfaceStyle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "options"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setAnimation"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setStatusBarAnimation"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setStatusBarStyle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setStatusBarVisible"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "statusBarTappedNotification"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "success"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "triggerJSEvent"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "unimplemented"]
+- !private ["s21_ObjectiveCBridgeableP", "getStatusBarStyle"]
+- !private ["s21_ObjectiveCBridgeableP", "getStatusBarVisible"]
+- !private ["s21_ObjectiveCBridgeableP", "getUserInterfaceStyle"]
+- !private ["s21_ObjectiveCBridgeableP", "name"]
+- !private ["s21_ObjectiveCBridgeableP", "none"]
+- !private ["s21_ObjectiveCBridgeableP", "setStatusBarAnimation"]
+- !private ["s21_ObjectiveCBridgeableP", "setStatusBarStyle"]
+- !private ["s21_ObjectiveCBridgeableP", "setStatusBarVisible"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "triggerJSEvent"]
+depends-nominal:
+- !private "9Capacitor9CAPBridgeC"
+- "So9CAPPluginC"
+- !private "So13CAPPluginCallC"
+- "9Capacitor18CAPStatusBarPluginC"
+- "s7CVarArgP"
+- !private "Sl"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SD"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
+- !private "SE"
+- "SQ"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "SH"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "10Foundation12NotificationV"
+- !private "So20NSNotificationCenterC"
+- !private "So9OS_objectC"
+- !private "Sq"
+- !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "7Combine9SchedulerP"
+- !private "ST"
+- !private "So20UIStatusBarAnimationV"
+- !private "So16UIStatusBarStyleV"
+- !private "So20UIUserInterfaceStyleV"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMIDI.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMedia.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/simd.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/AVFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreAudio.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Photos.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDV.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/Pods/Target Support Files/CapacitorCordova/CapacitorCordova-umbrella.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/Pods/Target Support Files/Capacitor/Capacitor-umbrella.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVInvokedUrlCommand.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/CAPPluginMethod.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/Plugins/Keyboard.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVCommandDelegate.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVScreenOrientationDelegate.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/AppDelegate.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVUIWebViewDelegate.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVUserAgentUtil.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/CAPPluginCall.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVURLProtocol.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVCommandDelegateImpl.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/CAPPlugin.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVPlugin.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/CAPBridgedPlugin.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVPluginManager.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVViewController.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVConfigParser.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/Capacitor.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/NSDictionary+CordovaPreferences.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/Plugins/DefaultPlugins.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVPluginResult.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVAvailability.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/DerivedData/App/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/unextended-module.modulemap"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/DerivedData/App/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCordova.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/SafariServices.framework/Headers/SafariServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Photos.framework/Headers/Photos.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "34ab5d6e869f9d44cad133d221e9a502"

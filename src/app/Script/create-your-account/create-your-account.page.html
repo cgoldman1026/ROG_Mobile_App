@@ -1,0 +1,190 @@
+<ion-header class="scriptHeader">
+  <ion-title class="scriptHeaderTitle">
+    CREATE YOUR ACCOUNT
+  </ion-title>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form">
+    <ion-grid class="ion-no-padding">
+
+      <ion-row>
+        <ion-col>
+
+          <ion-item class="firstInputItem" lines="none">
+
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight < 570">
+              * Your First Name:
+            </ion-label>
+
+            <ion-label color="primary" class="inputLabelFloating" *ngIf="this.platformHeight >= 570"
+              position='floating'>
+              * Your First Name
+            </ion-label>
+
+            <ion-input class="inputField" autocapitalize="words" autocomplete="on" formControlName="firstName"
+              type="text" maxlength="25" placeholder='John' enterkeyhint="next">
+            </ion-input>
+
+          </ion-item>
+
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItem" lines="none">
+
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight < 570">
+              * Your Last Name:
+            </ion-label>
+
+            <ion-label color="primary" class="inputLabelFloating" *ngIf="this.platformHeight >= 570"
+              position='floating'>
+              * Your Last Name
+            </ion-label>
+
+            <ion-input class="inputField" autocapitalize="words" autocomplete="on" formControlName="lastName"
+              type="text" maxlength="30" placeholder='Smith' enterkeyhint="next">
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputItem" lines="none">
+
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight < 570">
+              * Your Email:
+            </ion-label>
+
+            <ion-label color="primary" class="inputLabelFloating" *ngIf="this.platformHeight >= 570"
+              position='floating'>
+              * Your Email Address
+            </ion-label>
+
+            <ion-input class="inputField" autocomplete="email" formControlName="emailAddress" type="email"
+              placeholder='johnsmith@email.com' email enterkeyhint="next" (ionFocus)="toggleEmailAddressFocused()">
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+
+          <ion-item class="inputItem" lines="none">
+
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight < 570">
+              * Your Mobile #:
+            </ion-label>
+
+            <ion-label color="primary" class="inputLabelFloating" *ngIf="this.platformHeight >= 570"
+              position='floating'>
+              * Your Mobile Number
+            </ion-label>
+
+            <ion-input class="inputField" autocomplete="tel" formControlName="mobileNumber" type="tel" minlength="14"
+              appPhoneMask placeholder='(123) 456-7890' enterkeyhint="next" (ionFocus)="toggleMobileNumberFocused()">
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+
+          <ion-item class="inputItem" lines="none">
+
+            <ion-label color="primary" class="inputLabelFixed" *ngIf="this.platformHeight < 570">
+              * Your Password:
+            </ion-label>
+
+            <ion-label color="primary" class="inputLabelFloating" *ngIf="this.platformHeight >= 570"
+              position='floating'>
+              * Your Password
+            </ion-label>
+
+            <ion-input class="inputField" formControlName="password" type="password" placeholder='******'
+              enterkeyhint="done">
+            </ion-input>
+
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+          <ion-item lines="none" class="warningHolder">
+            <p [ngClass]="{
+              'regular': !form.valid || form.valid,
+              'danger':  !form.valid && (!form.get('firstName').valid && form.get('firstName').touched || !form.get('lastName').valid && form.get('lastName').touched || !form.get('emailAddress').valid && form.get('emailAddress').touched || !form.get('mobileNumber').valid && form.get('mobileNumber').touched || !form.get('password').valid && form.get('password').touched)
+             }">
+              * Required
+            </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+          <ion-item class="warningHolder" lines="none"
+            *ngIf="form.get('emailAddress').touched && form.get('emailAddress').invalid && this.emailAddressFocused">
+            <p class="danger">
+              Please enter a valid email address.
+            </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-no-padding">
+          <ion-item class="warningHolder" lines="none"
+            *ngIf="form.get('mobileNumber').touched && form.get('mobileNumber').invalid && this.mobileNumberFocused">
+            <p class="danger">
+              &nbsp;&nbsp;Please enter a valid mobile number.
+            </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <ion-item lines="none" class="warningHolder">
+            <p [ngClass]="{
+            'regular': !form.valid || form.valid,
+            'danger': !form.valid && (!form.get('password').valid && form.get('password').touched)         
+            }">
+              Password must be 6 or more characters, including at least one capital letter and one number.
+            </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+    </ion-grid>
+  </form>
+
+
+  <ion-button (click)="onCreateAccount(form)" class="largeButton" routerDirection="forward" [disabled]="!form.valid">
+    CREATE ACCOUNT
+  </ion-button>
+
+  <ion-button routerLink="/script/confirm-campaign" fill="clear" routerDirection="back" class="bottomLeftButton">
+    BACK
+  </ion-button>
+
+  <ion-button fill="clear" (click)="presentModal()" class="bottomRightButton">
+    HELP
+  </ion-button>
+
+</ion-content>

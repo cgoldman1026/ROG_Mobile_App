@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button class="fullHamburger"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-text>
+        <h1 class="fullTitle">
+          Your Profile
+        </h1>
+      </ion-text>
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button slot="icon-only" class="fullHelp" (click)="presentModal()">
+        <ion-icon name="help-circle-outline" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-padding">
+  <ion-grid class="ion-no-padding">
+   
+   
+    <ion-row>
+      <ion-col class="ion-text-center nameCol">
+        <ion-text id='nameText'>
+          <!-- Chase Goldman Chase Goldman -->
+          {{ this.fullName }}
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    
+    
+    <ion-row>
+      <ion-col>
+        <ion-thumbnail id='imageThumbnail' *ngIf="!imageUploaded" (click)="selectImage()">
+          <div id='textHolder'>
+            <ion-text>
+              We don't have an <span style='color: var(--ion-color-secondary)'>action shot or selfie</span> from you yet. Click anywhere in this box to upload an image!
+            </ion-text>
+          </div>
+        </ion-thumbnail>
+        <ion-thumbnail *ngIf="imageUploaded">
+          <img [src]='imageSource'>
+        </ion-thumbnail>
+      </ion-col>
+    </ion-row>
+    
+    
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-label position="stacked" class='label'>
+            Your Mobile Number
+          </ion-label>
+          <ion-input [value]='this.mobileNumber' class='input' readonly='true'>
+          </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-label position="stacked" class='label'>
+            Your Email Address
+          </ion-label>
+          <ion-input [value]='this.emailAddress' class='input' readonly='true'>
+          </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  
+  
+  </ion-grid>
+
+  <ion-button fill='clear' color='danger' class='bottomMiddleButton' routerLink='/full/your-profile/edit-profile'>
+    EDIT PROFILE
+  </ion-button>
+
+</ion-content>

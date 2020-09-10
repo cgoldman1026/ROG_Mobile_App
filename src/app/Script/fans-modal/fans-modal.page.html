@@ -1,0 +1,80 @@
+<ion-toolbar>
+  <ion-buttons slot="primary">
+    <ion-button id='x' (click)='dismiss()'>
+      <ion-icon name="close-outline" color="tertiary"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title id="sectionTitle">Your Fans</ion-title>
+</ion-toolbar>
+
+<ion-content>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col>
+        <ion-list class="ion-no-padding" *ngIf="this.fans.length > 0" id="list">
+          <ion-card *ngFor="let fan of this.fans">
+            <ion-card-content class="ion-no-padding">
+              <ion-item lines="none" class="inputItem">
+                <ion-icon name="create-outline" class="editButton" slot="end" (click)="editFan(fan)"></ion-icon>
+                <ion-icon name="trash-outline" class="deleteButton" slot="end" (click)="deleteFan(fan)"></ion-icon>
+                <ion-label position="stacked" class="inputLabel">
+                  Fan's Name
+                </ion-label>
+                <ion-input readonly class="inputField">
+                  {{ fan.fanFirstName + ' ' + fan.fanLastName}}
+                </ion-input>
+              </ion-item>
+              <ion-item lines="none" class="inputItem">
+                <ion-label position="stacked" class="inputLabel">
+                  Fan's Message Starter
+                </ion-label>
+                <ion-input readonly class="inputField">
+                  {{ fan.fanMessageStarter }}
+                </ion-input>
+              </ion-item>
+              <ion-item lines="none" class="inputItem">
+                <ion-label position="stacked" class="inputLabel">
+                  Fan's Email Address
+                </ion-label>
+                <ion-input readonly class="inputField" *ngIf="fan.fanEmailAddress !== ''">
+                  {{ fan.fanEmailAddress }}
+                </ion-input>
+                <ion-input readonly class="inputField" *ngIf="fan.fanEmailAddress === ''">
+                  No Email Address
+                </ion-input>
+              </ion-item>
+              <ion-item lines="none" class="inputItem">
+                <ion-label position="stacked" class="inputLabel">
+                  Fan's Mobile Number
+                </ion-label>
+                <ion-input readonly class="inputField" *ngIf="fan.fanMobileNumber !== ''">
+                  {{ fan.fanMobileNumber }}
+                </ion-input>
+                <ion-input readonly class="inputField" *ngIf="fan.fanMobileNumber === ''">
+                  No Mobile Number
+                </ion-input>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+        </ion-list>
+
+        <ion-item lines="none" id="noFansHolder">
+          <ion-text *ngIf="this.fans.length === 0" id="noFans">
+            You have not added any fans yet.
+          </ion-text>
+        </ion-item>
+
+        <ion-button (click)="dismiss()" fill="clear" color="tertiary" class="bottomMiddleButtonFixed" *ngIf="this.fans.length <= 1">
+          CLOSE
+        </ion-button>
+
+
+        <ion-button (click)="dismiss()" fill="clear" color="tertiary" class="bottomMiddleButton"
+          *ngIf="this.fans.length > 1">
+          CLOSE
+        </ion-button>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

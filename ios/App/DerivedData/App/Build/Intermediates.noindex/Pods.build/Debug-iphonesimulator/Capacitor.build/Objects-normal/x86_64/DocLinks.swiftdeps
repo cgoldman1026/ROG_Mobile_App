@@ -1,0 +1,138 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DocLinks"
+provides-nominal:
+- "9Capacitor8DocLinksO"
+provides-member:
+- ["9Capacitor8DocLinksO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "DocLinks"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "String"
+- "StringLiteralType"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["9Capacitor8DocLinksO", "=="]
+- ["9Capacitor8DocLinksO", "CAPPluginMethodSelector"]
+- ["9Capacitor8DocLinksO", "NSCameraUsageDescription"]
+- ["9Capacitor8DocLinksO", "NSPhotoLibraryAddUsageDescription"]
+- ["9Capacitor8DocLinksO", "NSPhotoLibraryUsageDescription"]
+- ["9Capacitor8DocLinksO", "RawValue"]
+- ["9Capacitor8DocLinksO", "_Default_RawValue"]
+- !private ["9Capacitor8DocLinksO", "_findStringSwitchCase"]
+- ["9Capacitor8DocLinksO", "_rawHashValue"]
+- ["9Capacitor8DocLinksO", "deinit"]
+- ["9Capacitor8DocLinksO", "hash"]
+- ["9Capacitor8DocLinksO", "hashValue"]
+- ["9Capacitor8DocLinksO", "init"]
+- ["9Capacitor8DocLinksO", "rawValue"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "rawValue"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "rawValue"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "rawValue"]
+depends-nominal:
+- "9Capacitor8DocLinksO"
+- "SQ"
+- "SH"
+- "SY"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMIDI.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMedia.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/simd.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/AVFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreAudio.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Photos.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDV.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/Pods/Target Support Files/CapacitorCordova/CapacitorCordova-umbrella.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/Pods/Target Support Files/Capacitor/Capacitor-umbrella.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVInvokedUrlCommand.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/CAPPluginMethod.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/Plugins/Keyboard.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVCommandDelegate.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVScreenOrientationDelegate.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/AppDelegate.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVUIWebViewDelegate.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVUserAgentUtil.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/CAPPluginCall.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVURLProtocol.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVCommandDelegateImpl.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/CAPPlugin.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVPlugin.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/CAPBridgedPlugin.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVPluginManager.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVViewController.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVConfigParser.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/Capacitor.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/NSDictionary+CordovaPreferences.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/Capacitor/Capacitor/Plugins/DefaultPlugins.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVPluginResult.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/node_modules/@capacitor/ios/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVAvailability.h"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/DerivedData/App/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/unextended-module.modulemap"
+- "/Users/chasegoldman/Desktop/Reaching-Our-Goal-Scrap/ios/App/DerivedData/App/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCordova.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/SafariServices.framework/Headers/SafariServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Photos.framework/Headers/Photos.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d2102db137ac3f5697a14176dd61ade8"

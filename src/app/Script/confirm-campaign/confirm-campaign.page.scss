@@ -1,0 +1,48 @@
+#organizationNameText {
+    font-size: 8vw;
+    font-weight: bold;
+}
+
+#organizationNameCol {
+    font-size: 8vw;
+    font-weight: bold;
+    margin: 1vw;
+    margin-top: 2vh;
+}
+
+#organizationCategoryText {
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+#organizationCategoryCol {
+    margin: 1.3vw;
+}
+
+#organizationLogo {
+    width: 85vw;
+    height: 85vh;
+    position: relative;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    bottom: 18vh;
+}
+
+.smallButton {
+    bottom: 17vh;
+}
+
+#wrongCampaign {
+    position: fixed;
+    bottom: 8vh;
+    width: 95vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    font-size: 5.5vw;
+    align-items: center;
+    color: var(--ion-color-danger);
+}
+
+.bottomMiddleButton {
+    color: var(--ion-color-tertiary)
+}

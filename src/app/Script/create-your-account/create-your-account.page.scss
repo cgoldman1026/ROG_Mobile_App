@@ -1,0 +1,134 @@
+// BEGIN IOS STYLE SHEET
+.ios.scriptHeaderTitle {
+    width: 200vw;
+    font-size: 7.5vw;
+    margin-left: -50vw;
+}
+
+.ios.firstInputItem {
+    width: 100vw;
+    margin-bottom: -.25vh;
+    margin-top: 1vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+.ios .inputLabelFloating {
+    font-size: 5vw;
+    margin-bottom: -0.5vh;
+    margin-top: 0.25vh;
+}
+
+
+// END IOS STYLE SHEET
+
+
+
+
+// BEGIN MD STYLE SHEET
+.md.scriptHeaderTitle {
+    width: 200vw;
+    font-size: 7.5vw;
+    margin-left: -.75vw;
+    margin-top: 4vh;
+}
+
+.md .firstInputItem {
+    width: 100vw;
+    margin-bottom: -.25vh;
+    margin-top: 0.25vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+
+.md .inputLabelFloating {
+    font-size: 5vw;
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
+}
+
+
+// END MD STYLE SHEET
+
+
+
+// BEGIN GENERAL STYLE SHEET
+
+
+.inputItem {
+    width: 100vw;
+    margin-bottom: -.25vh;
+    margin-top: -0.25vh;
+    margin-left: 0vw;
+    font-size: 5vw;
+    --color: var(--ion-color-tertiary);
+}
+
+.inputField {
+    --placeholder-color: var(--ion-color-tertiary);
+    --placeholder-opacity: 40%;
+    --color: var(--ion-color-secondary);
+}
+
+
+.warningHolder {
+    margin-left: 0vw;
+    margin-top: -2.25vh;
+    margin-bottom: -1vh;
+    margin-right: 0vw;
+    padding: 0;
+    --background: transparent;
+}
+
+
+.regular {
+    font-size: 4vw;
+    color: var(--ion-color-tertiary);
+
+}
+
+.danger {
+    font-size: 4vw;
+    color: var(--ion-color-danger)
+}
+
+
+.largeButton {
+    bottom: 8.15vh;
+}
+
+.bottomLeftButton {
+    margin-bottom: -1.35vh;
+    color: var(--ion-color-danger);
+}
+
+.bottomRightButton {
+    margin-bottom: -1.35vh;
+    color: var(--ion-color-tertiary);
+}
+
+
+
+// END GENERAL STYLE SHEET
+
+
+// .inputItemStack {
+//     width: 102vw;
+//     margin-left: -3vw;
+//     margin-bottom: 1vh;
+//     margin-top: 1vh;
+//     padding-bottom: 0vh;
+//     padding-top: 0vh;
+//     font-size: 5.5vw;
+// }
+
+
+// .inputFieldStack {
+//     --placeholder-color: var(--ion-color-tertiary);
+//     --placeholder-opacity: 30%;
+//     --color: var(--ion-color-secondary);
+// }
+
